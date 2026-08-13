@@ -19,3 +19,19 @@ Uses a banking money-transfer API to demonstrate how AI-generated .NET code shou
 - Common technical interview questions with detailed answers
 - C# and .NET concepts explained with practical examples
 
+## Publish Changes to GitHub
+
+Run the publishing script from this repository:
+
+```bash
+./publish.sh
+```
+
+It performs the following commands automatically:
+
+1. Stages all changes with `git add .`.
+2. Finds the latest numbered commit and uses the next number.
+3. Creates the commit—for example, `#4`, then `#5`, then `#6`.
+4. Pushes the current branch to GitHub.
+
+If the branch does not have an upstream yet, the script sets `origin` automatically. When there are no changes, it exits without creating an empty commit.
