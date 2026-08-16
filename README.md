@@ -4,6 +4,18 @@ This repository contains interview questions, detailed technical explanations, p
 
 The current material focuses primarily on **C#**, **.NET**, **Entity Framework Core**, backend development, performance, security, and production-ready engineering practices.
 
+## Read the Knowledge Library
+
+Open `reader.html` directly to browse, search, and read every Markdown article with a polished layout. You can also use a local web server:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then visit `http://localhost:8080/reader.html`.
+
+The article index is refreshed automatically whenever `./publish.sh` runs. To refresh it without publishing, run `node generate-library.js`.
+
 ## Articles and Interview Topics
 
 ### [IEnumerable vs IQueryable vs List in C#](<IEnumerable vs IQueryable.md>)

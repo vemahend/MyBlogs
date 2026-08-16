@@ -24,6 +24,9 @@ fi
 
 commit_message="#${next_number}"
 
+# Refresh the reader's article list before staging files.
+node "$repository_dir/generate-library.js"
+
 git add .
 
 if git diff --cached --quiet; then

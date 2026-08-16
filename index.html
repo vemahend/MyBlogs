@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautifully organized library of technical interview notes and Markdown articles.">
+  <title>Dev Notes — Technical Knowledge Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reader.css">
+  <link rel="stylesheet" href="reader-typography.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="reader.html"><span class="brand-mark">D</span><span>dev<span>notes</span></span></a>
+    <nav><a href="#library">Library</a><a href="README.md">About</a></nav>
+    <a class="github-link" href="https://github.com" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal knowledge library</p>
+        <h1>Notes for engineers<br>who <em>keep learning.</em></h1>
+        <p>Deep dives, interview guides, and production lessons across .NET, distributed systems, and backend engineering.</p>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="articleCount">0</strong><span>Articles</span></div>
+        <div><strong id="categoryCount">0</strong><span>Topics</span></div>
+        <div><strong id="readingMinutes">0</strong><span>Min. of reading</span></div>
+      </div>
+    </section>
+
+    <section class="library" id="library">
+      <div class="library-head">
+        <div><p class="eyebrow">Browse the collection</p><h2>All notes</h2></div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search titles, topics, or content…" autocomplete="off"><kbd>⌘ K</kbd></label>
+      </div>
+      <div class="filter-row" id="filters"></div>
+      <div class="article-grid" id="articleGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No notes found</h3><p>Try another search or choose a different topic.</p></div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">D</span><span>dev<span>notes</span></span></div><p>Built for continuous learning. Written in Markdown.</p><a href="#">Back to top ↑</a></footer>
+
+  <dialog id="readerDialog">
+    <div class="reader-shell">
+      <aside class="reader-aside">
+        <button class="close-reader" id="closeReader">← Back to library</button>
+        <p class="aside-label">On this page</p>
+        <nav id="tableOfContents"></nav>
+      </aside>
+      <section class="reader-main">
+        <div class="reader-toolbar"><span id="readerPath"></span><div><button id="copyLink" title="Copy article link">Copy link</button><a id="rawLink" target="_blank">Raw Markdown ↗</a><button class="icon-button" id="closeReaderTop" aria-label="Close">×</button></div></div>
+        <article class="markdown-body" id="articleContent"><div class="loading">Loading article…</div></article>
+      </section>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="library-files.js"></script>
+  <script src="reader.js"></script>
+</body>
+</html>
