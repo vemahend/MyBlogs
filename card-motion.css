@@ -1,0 +1,11 @@
+/* Animated article-card visuals */
+.article-card{min-height:390px;padding:0}
+.card-gif{height:145px;position:relative;overflow:hidden;background:var(--green2);isolation:isolate;flex:none}
+.card-gif img{width:115%;height:115%;object-fit:cover;object-position:50% 50%;position:absolute;inset:-7.5%;animation:card-drift 8s ease-in-out infinite alternate;animation-delay:var(--motion-delay,0s);transition:filter .35s}
+.card-gif:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 20%,#fff7 42%,transparent 62%);transform:translateX(-120%);animation:card-glint 5.5s ease-in-out infinite;animation-delay:var(--motion-delay,0s);mix-blend-mode:soft-light}
+.card-content{display:flex;flex:1;flex-direction:column;padding:22px 25px 25px}
+.article-card h3{margin-top:18px}
+.article-card:hover .card-gif img{filter:saturate(1.12) contrast(1.04)}
+@keyframes card-drift{from{transform:scale(1.02) translate3d(-1.5%,0,0)}to{transform:scale(1.09) translate3d(1.5%,-1.5%,0)}}
+@keyframes card-glint{0%,38%{transform:translateX(-120%)}68%,100%{transform:translateX(120%)}}
+@media(prefers-reduced-motion:reduce){.card-gif img,.card-gif:after{animation:none}}
