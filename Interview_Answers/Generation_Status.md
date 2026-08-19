@@ -16,11 +16,11 @@
 ## Summary
 
 - Total questions discovered: 1500
-- Completed: 0
+- Completed: 2
 - Already complete: 9
 - Repaired: 0
-- Failed: 1491
-- Remaining: 1491
+- Failed: 1489
+- Remaining: 1489
 
 ## Question status
 
@@ -35,8 +35,8 @@
 | 1 | ASP.NET Core and Web API | How do you design a clean REST API for an enterprise application? | [002-001-how-do-you-design-a-clean-rest-api-for-an-enterprise-application.md](./002-ASP-NET-Core-and-Web-API/002-001-how-do-you-design-a-clean-rest-api-for-an-enterprise-application.md) | Already complete | all structural checks passed |  |
 | 2 | ASP.NET Core and Web API | What status codes do you use for validation failure, unauthorized access, conflict, and unexpected errors? | [002-002-what-status-codes-do-you-use-for-validation-failure-unauthorized-access-conflict-and-unexpected-errors.md](./002-ASP-NET-Core-and-Web-API/002-002-what-status-codes-do-you-use-for-validation-failure-unauthorized-access-conflict-and-unexpected-errors.md) | Already complete | all structural checks passed |  |
 | 3 | ASP.NET Core and Web API | How do middleware and filters differ in ASP.NET Core? | [002-003-how-do-middleware-and-filters-differ-in-asp-net-core.md](./002-ASP-NET-Core-and-Web-API/002-003-how-do-middleware-and-filters-differ-in-asp-net-core.md) | Already complete | all structural checks passed |  |
-| 4 | ASP.NET Core and Web API | How would you design an API that needs idempotency? | [002-004-how-would-you-design-an-api-that-needs-idempotency.md](./002-ASP-NET-Core-and-Web-API/002-004-how-would-you-design-an-api-that-needs-idempotency.md) | Failed | failed | codex exited null |
-| 5 | ASP.NET Core and Web API | How do you version APIs without breaking existing clients? | [002-005-how-do-you-version-apis-without-breaking-existing-clients.md](./002-ASP-NET-Core-and-Web-API/002-005-how-do-you-version-apis-without-breaking-existing-clients.md) | Failed | failed | codex exited null |
+| 4 | ASP.NET Core and Web API | How would you design an API that needs idempotency? | [002-004-how-would-you-design-an-api-that-needs-idempotency.md](./002-ASP-NET-Core-and-Web-API/002-004-how-would-you-design-an-api-that-needs-idempotency.md) | Completed | all structural checks passed |  |
+| 5 | ASP.NET Core and Web API | How do you version APIs without breaking existing clients? | [002-005-how-do-you-version-apis-without-breaking-existing-clients.md](./002-ASP-NET-Core-and-Web-API/002-005-how-do-you-version-apis-without-breaking-existing-clients.md) | Completed | all structural checks passed |  |
 | 6 | ASP.NET Core and Web API | How would you troubleshoot a slow API endpoint in production? | [002-006-how-would-you-troubleshoot-a-slow-api-endpoint-in-production.md](./002-ASP-NET-Core-and-Web-API/002-006-how-would-you-troubleshoot-a-slow-api-endpoint-in-production.md) | Failed | failed | codex exited null |
 | 1 | Microservices | What is the difference between microservices and a modular monolith? | [003-001-what-is-the-difference-between-microservices-and-a-modular-monolith.md](./003-Microservices/003-001-what-is-the-difference-between-microservices-and-a-modular-monolith.md) | Failed | failed | codex exited null |
 | 2 | Microservices | How do you decide service boundaries? | [003-002-how-do-you-decide-service-boundaries.md](./003-Microservices/003-002-how-do-you-decide-service-boundaries.md) | Failed | failed | codex exited null |

@@ -1,27 +1,5 @@
 [
   {
-    "key": "2:4",
-    "number": "4",
-    "technology": "ASP.NET Core and Web API",
-    "title": "How would you design an API that needs idempotency?",
-    "filename": "002-004-how-would-you-design-an-api-that-needs-idempotency.md",
-    "relativePath": "002-ASP-NET-Core-and-Web-API/002-004-how-would-you-design-an-api-that-needs-idempotency.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "2:5",
-    "number": "5",
-    "technology": "ASP.NET Core and Web API",
-    "title": "How do you version APIs without breaking existing clients?",
-    "filename": "002-005-how-do-you-version-apis-without-breaking-existing-clients.md",
-    "relativePath": "002-ASP-NET-Core-and-Web-API/002-005-how-do-you-version-apis-without-breaking-existing-clients.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
     "key": "2:6",
     "number": "6",
     "technology": "ASP.NET Core and Web API",
@@ -16496,6 +16474,28 @@
     "filename": "002-003-how-do-middleware-and-filters-differ-in-asp-net-core.md",
     "relativePath": "002-ASP-NET-Core-and-Web-API/002-003-how-do-middleware-and-filters-differ-in-asp-net-core.md",
     "status": "Already complete",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "2:4",
+    "number": "4",
+    "technology": "ASP.NET Core and Web API",
+    "title": "How would you design an API that needs idempotency?",
+    "filename": "002-004-how-would-you-design-an-api-that-needs-idempotency.md",
+    "relativePath": "002-ASP-NET-Core-and-Web-API/002-004-how-would-you-design-an-api-that-needs-idempotency.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "2:5",
+    "number": "5",
+    "technology": "ASP.NET Core and Web API",
+    "title": "How do you version APIs without breaking existing clients?",
+    "filename": "002-005-how-do-you-version-apis-without-breaking-existing-clients.md",
+    "relativePath": "002-ASP-NET-Core-and-Web-API/002-005-how-do-you-version-apis-without-breaking-existing-clients.md",
+    "status": "Completed",
     "validation": "all structural checks passed",
     "error": ""
   }

@@ -1756,3 +1756,5 @@ Duplicate titles were detected before generation and will retain distinct sectio
 [7/1500] Already complete: ASP.NET Core and Web API 1. How do you design a clean REST API for an enterprise application?
 [8/1500] Already complete: ASP.NET Core and Web API 2. What status codes do you use for validation failure, unauthorized access, conflict, and unexpected errors?
 [9/1500] Already complete: ASP.NET Core and Web API 3. How do middleware and filters differ in ASP.NET Core?
+[10/1500] Completed: ASP.NET Core and Web API 4. How would you design an API that needs idempotency?
+[11/1500] Completed: ASP.NET Core and Web API 5. How do you version APIs without breaking existing clients?

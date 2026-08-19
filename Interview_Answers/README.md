@@ -2,11 +2,11 @@
 
 - Technology/category sections: 109
 - Total questions: 1500
-- Completed: 0
+- Completed: 2
 - Already complete: 9
 - Repaired: 0
-- Failed: 1491
-- Remaining: 1491
+- Failed: 1489
+- Remaining: 1489
 
 ## Recommended revision order
 
