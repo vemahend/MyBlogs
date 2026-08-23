@@ -1,665 +1,5 @@
 [
   {
-    "key": "12:31",
-    "number": "31",
-    "technology": "API Design and Integration Governance",
-    "title": "How do you secure an API?",
-    "filename": "012-031-how-do-you-secure-an-api.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-031-how-do-you-secure-an-api.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:32",
-    "number": "32",
-    "technology": "API Design and Integration Governance",
-    "title": "How do you implement rate limiting and throttling?",
-    "filename": "012-032-how-do-you-implement-rate-limiting-and-throttling.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-032-how-do-you-implement-rate-limiting-and-throttling.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:33",
-    "number": "33",
-    "technology": "API Design and Integration Governance",
-    "title": "What is a correlation ID?",
-    "filename": "012-033-what-is-a-correlation-id.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-033-what-is-a-correlation-id.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:34",
-    "number": "34",
-    "technology": "API Design and Integration Governance",
-    "title": "How do you propagate a correlation ID?",
-    "filename": "012-034-how-do-you-propagate-a-correlation-id.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-034-how-do-you-propagate-a-correlation-id.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:35",
-    "number": "35",
-    "technology": "API Design and Integration Governance",
-    "title": "How do you trace a request across microservices?",
-    "filename": "012-035-how-do-you-trace-a-request-across-microservices.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-035-how-do-you-trace-a-request-across-microservices.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:36",
-    "number": "36",
-    "technology": "API Design and Integration Governance",
-    "title": "How do you handle API timeouts and retries?",
-    "filename": "012-036-how-do-you-handle-api-timeouts-and-retries.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-036-how-do-you-handle-api-timeouts-and-retries.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:37",
-    "number": "37",
-    "technology": "API Design and Integration Governance",
-    "title": "Which HTTP errors should be retried?",
-    "filename": "012-037-which-http-errors-should-be-retried.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-037-which-http-errors-should-be-retried.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:38",
-    "number": "38",
-    "technology": "API Design and Integration Governance",
-    "title": "Why should you not retry every request?",
-    "filename": "012-038-why-should-you-not-retry-every-request.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-038-why-should-you-not-retry-every-request.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:39",
-    "number": "39",
-    "technology": "API Design and Integration Governance",
-    "title": "What are exponential backoff and jitter?",
-    "filename": "012-039-what-are-exponential-backoff-and-jitter.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-039-what-are-exponential-backoff-and-jitter.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:40",
-    "number": "40",
-    "technology": "API Design and Integration Governance",
-    "title": "What is a circuit breaker?",
-    "filename": "012-040-what-is-a-circuit-breaker.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-040-what-is-a-circuit-breaker.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:41",
-    "number": "41",
-    "technology": "API Design and Integration Governance",
-    "title": "API Gateway versus reverse proxy?",
-    "filename": "012-041-api-gateway-versus-reverse-proxy.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-041-api-gateway-versus-reverse-proxy.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:42",
-    "number": "42",
-    "technology": "API Design and Integration Governance",
-    "title": "What should be handled at Azure API Management?",
-    "filename": "012-042-what-should-be-handled-at-azure-api-management.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-042-what-should-be-handled-at-azure-api-management.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "12:43",
-    "number": "43",
-    "technology": "API Design and Integration Governance",
-    "title": "What should remain in application code?",
-    "filename": "012-043-what-should-remain-in-application-code.md",
-    "relativePath": "012-API-Design-and-Integration-Governance/012-043-what-should-remain-in-application-code.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:1",
-    "number": "1",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find duplicate items in a list.",
-    "filename": "013-001-find-duplicate-items-in-a-list.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-001-find-duplicate-items-in-a-list.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:2",
-    "number": "2",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Remove duplicates from a list.",
-    "filename": "013-002-remove-duplicates-from-a-list.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-002-remove-duplicates-from-a-list.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:3",
-    "number": "3",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find the first non-repeating character.",
-    "filename": "013-003-find-the-first-non-repeating-character.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-003-find-the-first-non-repeating-character.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:4",
-    "number": "4",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Reverse a string.",
-    "filename": "013-004-reverse-a-string.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-004-reverse-a-string.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:5",
-    "number": "5",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Count character frequency.",
-    "filename": "013-005-count-character-frequency.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-005-count-character-frequency.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:6",
-    "number": "6",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Group orders by customer.",
-    "filename": "013-006-group-orders-by-customer.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-006-group-orders-by-customer.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:7",
-    "number": "7",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Calculate total order value per customer.",
-    "filename": "013-007-calculate-total-order-value-per-customer.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-007-calculate-total-order-value-per-customer.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:8",
-    "number": "8",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find the top three customers by order value.",
-    "filename": "013-008-find-the-top-three-customers-by-order-value.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-008-find-the-top-three-customers-by-order-value.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:9",
-    "number": "9",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Filter completed orders.",
-    "filename": "013-009-filter-completed-orders.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-009-filter-completed-orders.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:10",
-    "number": "10",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Sort customers by total spend.",
-    "filename": "013-010-sort-customers-by-total-spend.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-010-sort-customers-by-total-spend.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:11",
-    "number": "11",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find duplicate transactions.",
-    "filename": "013-011-find-duplicate-transactions.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-011-find-duplicate-transactions.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:12",
-    "number": "12",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Merge two collections.",
-    "filename": "013-012-merge-two-collections.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-012-merge-two-collections.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:13",
-    "number": "13",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find missing numbers in a sequence.",
-    "filename": "013-013-find-missing-numbers-in-a-sequence.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-013-find-missing-numbers-in-a-sequence.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:14",
-    "number": "14",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find the second-highest value.",
-    "filename": "013-014-find-the-second-highest-value.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-014-find-the-second-highest-value.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:15",
-    "number": "15",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Group employees by department.",
-    "filename": "013-015-group-employees-by-department.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-015-group-employees-by-department.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:16",
-    "number": "16",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Find the highest-paid employee in each department.",
-    "filename": "013-016-find-the-highest-paid-employee-in-each-department.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-016-find-the-highest-paid-employee-in-each-department.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:17",
-    "number": "17",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Write a LINQ GroupBy.",
-    "filename": "013-017-write-a-linq-groupby.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-017-write-a-linq-groupby.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:18",
-    "number": "18",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Explain deferred execution.",
-    "filename": "013-018-explain-deferred-execution.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-018-explain-deferred-execution.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:19",
-    "number": "19",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What happens when ToList is called?",
-    "filename": "013-019-what-happens-when-tolist-is-called.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-019-what-happens-when-tolist-is-called.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:20",
-    "number": "20",
-    "technology": "C# Live Coding and LINQ",
-    "title": "First versus FirstOrDefault?",
-    "filename": "013-020-first-versus-firstordefault.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-020-first-versus-firstordefault.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:21",
-    "number": "21",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Single versus SingleOrDefault?",
-    "filename": "013-021-single-versus-singleordefault.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-021-single-versus-singleordefault.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:22",
-    "number": "22",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Any versus Count greater than zero?",
-    "filename": "013-022-any-versus-count-greater-than-zero.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-022-any-versus-count-greater-than-zero.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:23",
-    "number": "23",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Select versus SelectMany?",
-    "filename": "013-023-select-versus-selectmany.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-023-select-versus-selectmany.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:24",
-    "number": "24",
-    "technology": "C# Live Coding and LINQ",
-    "title": "IEnumerable versus IQueryable?",
-    "filename": "013-024-ienumerable-versus-iqueryable.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-024-ienumerable-versus-iqueryable.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:25",
-    "number": "25",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Where is an IQueryable query executed?",
-    "filename": "013-025-where-is-an-iqueryable-query-executed.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-025-where-is-an-iqueryable-query-executed.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:26",
-    "number": "26",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What happens if you call ToList too early?",
-    "filename": "013-026-what-happens-if-you-call-tolist-too-early.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-026-what-happens-if-you-call-tolist-too-early.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:27",
-    "number": "27",
-    "technology": "C# Live Coding and LINQ",
-    "title": "How does EF Core translate LINQ to SQL?",
-    "filename": "013-027-how-does-ef-core-translate-linq-to-sql.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-027-how-does-ef-core-translate-linq-to-sql.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:28",
-    "number": "28",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What happens if EF cannot translate a LINQ expression?",
-    "filename": "013-028-what-happens-if-ef-cannot-translate-a-linq-expression.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-028-what-happens-if-ef-cannot-translate-a-linq-expression.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:29",
-    "number": "29",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Write an asynchronous method.",
-    "filename": "013-029-write-an-asynchronous-method.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-029-write-an-asynchronous-method.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:30",
-    "number": "30",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Refactor .Result to await.",
-    "filename": "013-030-refactor-result-to-await.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-030-refactor-result-to-await.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:31",
-    "number": "31",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Refactor .Wait to await.",
-    "filename": "013-031-refactor-wait-to-await.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-031-refactor-wait-to-await.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:32",
-    "number": "32",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Explain why sync-over-async is problematic.",
-    "filename": "013-032-explain-why-sync-over-async-is-problematic.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-032-explain-why-sync-over-async-is-problematic.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:33",
-    "number": "33",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Does await create a thread?",
-    "filename": "013-033-does-await-create-a-thread.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-033-does-await-create-a-thread.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:34",
-    "number": "34",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What happens internally when await is reached?",
-    "filename": "013-034-what-happens-internally-when-await-is-reached.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-034-what-happens-internally-when-await-is-reached.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:35",
-    "number": "35",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What is a Task?",
-    "filename": "013-035-what-is-a-task.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-035-what-is-a-task.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:36",
-    "number": "36",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Task versus Thread?",
-    "filename": "013-036-task-versus-thread.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-036-task-versus-thread.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:37",
-    "number": "37",
-    "technology": "C# Live Coding and LINQ",
-    "title": "How do you run independent asynchronous operations concurrently?",
-    "filename": "013-037-how-do-you-run-independent-asynchronous-operations-concurrently.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-037-how-do-you-run-independent-asynchronous-operations-concurrently.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:38",
-    "number": "38",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Task.WhenAll versus sequential awaits?",
-    "filename": "013-038-task-whenall-versus-sequential-awaits.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-038-task-whenall-versus-sequential-awaits.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:39",
-    "number": "39",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What is a CancellationToken?",
-    "filename": "013-039-what-is-a-cancellationtoken.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-039-what-is-a-cancellationtoken.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:40",
-    "number": "40",
-    "technology": "C# Live Coding and LINQ",
-    "title": "Why should APIs accept cancellation tokens?",
-    "filename": "013-040-why-should-apis-accept-cancellation-tokens.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-040-why-should-apis-accept-cancellation-tokens.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:41",
-    "number": "41",
-    "technology": "C# Live Coding and LINQ",
-    "title": "How do you handle exceptions with Task.WhenAll?",
-    "filename": "013-041-how-do-you-handle-exceptions-with-task-whenall.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-041-how-do-you-handle-exceptions-with-task-whenall.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:42",
-    "number": "42",
-    "technology": "C# Live Coding and LINQ",
-    "title": "How would you refactor a large service class?",
-    "filename": "013-042-how-would-you-refactor-a-large-service-class.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-042-how-would-you-refactor-a-large-service-class.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:43",
-    "number": "43",
-    "technology": "C# Live Coding and LINQ",
-    "title": "How would you make this code testable?",
-    "filename": "013-043-how-would-you-make-this-code-testable.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-043-how-would-you-make-this-code-testable.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:44",
-    "number": "44",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What dependencies would you inject?",
-    "filename": "013-044-what-dependencies-would-you-inject.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-044-what-dependencies-would-you-inject.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:45",
-    "number": "45",
-    "technology": "C# Live Coding and LINQ",
-    "title": "What problems do you see in this code?",
-    "filename": "013-045-what-problems-do-you-see-in-this-code.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-045-what-problems-do-you-see-in-this-code.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "13:46",
-    "number": "46",
-    "technology": "C# Live Coding and LINQ",
-    "title": "How would you improve this code for production?",
-    "filename": "013-046-how-would-you-improve-this-code-for-production.md",
-    "relativePath": "013-C-Live-Coding-and-LINQ/013-046-how-would-you-improve-this-code-for-production.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
-    "key": "14:1",
-    "number": "1",
-    "technology": "Async Await and .NET Internals",
-    "title": "Explain async and await internally.",
-    "filename": "014-001-explain-async-and-await-internally.md",
-    "relativePath": "014-Async-Await-and-NET-Internals/014-001-explain-async-and-await-internally.md",
-    "status": "Failed",
-    "validation": "failed",
-    "error": "codex exited null"
-  },
-  {
     "key": "14:2",
     "number": "2",
     "technology": "Async Await and .NET Internals",
@@ -15065,7 +14405,7 @@
     "title": "How do you read an execution plan?",
     "filename": "005-004-how-do-you-read-an-execution-plan.md",
     "relativePath": "005-SQL-Server-and-Data-Access/005-004-how-do-you-read-an-execution-plan.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15076,7 +14416,7 @@
     "title": "When would you use Entity Framework, and when would you use Dapper?",
     "filename": "005-005-when-would-you-use-entity-framework-and-when-would-you-use-dapper.md",
     "relativePath": "005-SQL-Server-and-Data-Access/005-005-when-would-you-use-entity-framework-and-when-would-you-use-dapper.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15087,7 +14427,7 @@
     "title": "How do you avoid the N+1 query problem in EF?",
     "filename": "005-006-how-do-you-avoid-the-n-1-query-problem-in-ef.md",
     "relativePath": "005-SQL-Server-and-Data-Access/005-006-how-do-you-avoid-the-n-1-query-problem-in-ef.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15098,7 +14438,7 @@
     "title": "How do React and Angular differ architecturally?",
     "filename": "006-001-how-do-react-and-angular-differ-architecturally.md",
     "relativePath": "006-React-Angular-and-Frontend/006-001-how-do-react-and-angular-differ-architecturally.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15109,7 +14449,7 @@
     "title": "What are React hooks, and how do you avoid common hook mistakes?",
     "filename": "006-002-what-are-react-hooks-and-how-do-you-avoid-common-hook-mistakes.md",
     "relativePath": "006-React-Angular-and-Frontend/006-002-what-are-react-hooks-and-how-do-you-avoid-common-hook-mistakes.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15120,7 +14460,7 @@
     "title": "How do you manage API loading, error, and empty states in React?",
     "filename": "006-003-how-do-you-manage-api-loading-error-and-empty-states-in-react.md",
     "relativePath": "006-React-Angular-and-Frontend/006-003-how-do-you-manage-api-loading-error-and-empty-states-in-react.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15131,7 +14471,7 @@
     "title": "What does TypeScript add to JavaScript development?",
     "filename": "006-004-what-does-typescript-add-to-javascript-development.md",
     "relativePath": "006-React-Angular-and-Frontend/006-004-what-does-typescript-add-to-javascript-development.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15142,7 +14482,7 @@
     "title": "How do Angular services and dependency injection work?",
     "filename": "006-005-how-do-angular-services-and-dependency-injection-work.md",
     "relativePath": "006-React-Angular-and-Frontend/006-005-how-do-angular-services-and-dependency-injection-work.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15153,7 +14493,7 @@
     "title": "How do you keep frontend and backend contracts aligned?",
     "filename": "006-006-how-do-you-keep-frontend-and-backend-contracts-aligned.md",
     "relativePath": "006-React-Angular-and-Frontend/006-006-how-do-you-keep-frontend-and-backend-contracts-aligned.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15164,7 +14504,7 @@
     "title": "What makes a good unit test?",
     "filename": "007-001-what-makes-a-good-unit-test.md",
     "relativePath": "007-Testing-and-Quality/007-001-what-makes-a-good-unit-test.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15175,7 +14515,7 @@
     "title": "What should be mocked, and what should not be mocked?",
     "filename": "007-002-what-should-be-mocked-and-what-should-not-be-mocked.md",
     "relativePath": "007-Testing-and-Quality/007-002-what-should-be-mocked-and-what-should-not-be-mocked.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15186,7 +14526,7 @@
     "title": "How do you use MOQ to test a service with dependencies?",
     "filename": "007-003-how-do-you-use-moq-to-test-a-service-with-dependencies.md",
     "relativePath": "007-Testing-and-Quality/007-003-how-do-you-use-moq-to-test-a-service-with-dependencies.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15197,7 +14537,7 @@
     "title": "How do you test async methods and exception paths?",
     "filename": "007-004-how-do-you-test-async-methods-and-exception-paths.md",
     "relativePath": "007-Testing-and-Quality/007-004-how-do-you-test-async-methods-and-exception-paths.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15208,7 +14548,7 @@
     "title": "What tests would you write for a payment or transaction workflow?",
     "filename": "007-005-what-tests-would-you-write-for-a-payment-or-transaction-workflow.md",
     "relativePath": "007-Testing-and-Quality/007-005-what-tests-would-you-write-for-a-payment-or-transaction-workflow.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15219,7 +14559,7 @@
     "title": "How do you handle flaky tests?",
     "filename": "007-006-how-do-you-handle-flaky-tests.md",
     "relativePath": "007-Testing-and-Quality/007-006-how-do-you-handle-flaky-tests.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15230,7 +14570,7 @@
     "title": "What do you look for in code reviews?",
     "filename": "008-001-what-do-you-look-for-in-code-reviews.md",
     "relativePath": "008-Leadership-and-AI-Assisted-Engineering/008-001-what-do-you-look-for-in-code-reviews.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15241,7 +14581,7 @@
     "title": "How do you mentor junior developers?",
     "filename": "008-002-how-do-you-mentor-junior-developers.md",
     "relativePath": "008-Leadership-and-AI-Assisted-Engineering/008-002-how-do-you-mentor-junior-developers.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15252,7 +14592,7 @@
     "title": "How do you handle delivery pressure without reducing quality?",
     "filename": "008-003-how-do-you-handle-delivery-pressure-without-reducing-quality.md",
     "relativePath": "008-Leadership-and-AI-Assisted-Engineering/008-003-how-do-you-handle-delivery-pressure-without-reducing-quality.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15263,7 +14603,7 @@
     "title": "How have you used Claude Code or GitHub Copilot in real development?",
     "filename": "008-004-how-have-you-used-claude-code-or-github-copilot-in-real-development.md",
     "relativePath": "008-Leadership-and-AI-Assisted-Engineering/008-004-how-have-you-used-claude-code-or-github-copilot-in-real-development.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15274,7 +14614,7 @@
     "title": "How do you verify AI-generated code before it reaches production?",
     "filename": "008-005-how-do-you-verify-ai-generated-code-before-it-reaches-production.md",
     "relativePath": "008-Leadership-and-AI-Assisted-Engineering/008-005-how-do-you-verify-ai-generated-code-before-it-reaches-production.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15285,7 +14625,7 @@
     "title": "How would you introduce AI-first development practices to a team?",
     "filename": "008-006-how-would-you-introduce-ai-first-development-practices-to-a-team.md",
     "relativePath": "008-Leadership-and-AI-Assisted-Engineering/008-006-how-would-you-introduce-ai-first-development-practices-to-a-team.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15296,7 +14636,7 @@
     "title": "What is the difference between .NET Framework and modern .NET?",
     "filename": "009-001-what-is-the-difference-between-net-framework-and-modern-net.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-001-what-is-the-difference-between-net-framework-and-modern-net.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15307,7 +14647,7 @@
     "title": "What are the major architectural differences between .NET Framework 4.x and modern .NET?",
     "filename": "009-002-what-are-the-major-architectural-differences-between-net-framework-4-x-and-modern-net.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-002-what-are-the-major-architectural-differences-between-net-framework-4-x-and-modern-net.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15318,7 +14658,7 @@
     "title": "How would you migrate a .NET Framework 4 application to modern .NET?",
     "filename": "009-003-how-would-you-migrate-a-net-framework-4-application-to-modern-net.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-003-how-would-you-migrate-a-net-framework-4-application-to-modern-net.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15329,7 +14669,7 @@
     "title": "Would you rewrite the entire application? Why or why not?",
     "filename": "009-004-would-you-rewrite-the-entire-application-why-or-why-not.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-004-would-you-rewrite-the-entire-application-why-or-why-not.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15340,7 +14680,7 @@
     "title": "Why would you avoid a big-bang rewrite?",
     "filename": "009-005-why-would-you-avoid-a-big-bang-rewrite.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-005-why-would-you-avoid-a-big-bang-rewrite.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15351,7 +14691,7 @@
     "title": "How do you assess a legacy .NET application before modernising it?",
     "filename": "009-006-how-do-you-assess-a-legacy-net-application-before-modernising-it.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-006-how-do-you-assess-a-legacy-net-application-before-modernising-it.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15362,7 +14702,7 @@
     "title": "How do you identify dependencies in a legacy application?",
     "filename": "009-007-how-do-you-identify-dependencies-in-a-legacy-application.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-007-how-do-you-identify-dependencies-in-a-legacy-application.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15373,7 +14713,7 @@
     "title": "How do you handle libraries that are not compatible with modern .NET?",
     "filename": "009-008-how-do-you-handle-libraries-that-are-not-compatible-with-modern-net.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-008-how-do-you-handle-libraries-that-are-not-compatible-with-modern-net.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15384,7 +14724,7 @@
     "title": "How would you migrate web.config configuration?",
     "filename": "009-009-how-would-you-migrate-web-config-configuration.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-009-how-would-you-migrate-web-config-configuration.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15395,7 +14735,7 @@
     "title": "How is dependency injection different in modern ASP.NET Core?",
     "filename": "009-010-how-is-dependency-injection-different-in-modern-asp-net-core.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-010-how-is-dependency-injection-different-in-modern-asp-net-core.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15406,7 +14746,7 @@
     "title": "How is the ASP.NET Core request pipeline different from classic ASP.NET?",
     "filename": "009-011-how-is-the-asp-net-core-request-pipeline-different-from-classic-asp-net.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-011-how-is-the-asp-net-core-request-pipeline-different-from-classic-asp-net.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15417,7 +14757,7 @@
     "title": "What is middleware, and how does middleware ordering work?",
     "filename": "009-012-what-is-middleware-and-how-does-middleware-ordering-work.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-012-what-is-middleware-and-how-does-middleware-ordering-work.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15428,7 +14768,7 @@
     "title": "What problems can incorrect middleware ordering cause?",
     "filename": "009-013-what-problems-can-incorrect-middleware-ordering-cause.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-013-what-problems-can-incorrect-middleware-ordering-cause.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15439,7 +14779,7 @@
     "title": "How would you migrate authentication from a legacy application?",
     "filename": "009-014-how-would-you-migrate-authentication-from-a-legacy-application.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-014-how-would-you-migrate-authentication-from-a-legacy-application.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15450,7 +14790,7 @@
     "title": "How do you migrate Entity Framework to EF Core?",
     "filename": "009-015-how-do-you-migrate-entity-framework-to-ef-core.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-015-how-do-you-migrate-entity-framework-to-ef-core.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15461,7 +14801,7 @@
     "title": "What compatibility problems have you faced during .NET migration?",
     "filename": "009-016-what-compatibility-problems-have-you-faced-during-net-migration.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-016-what-compatibility-problems-have-you-faced-during-net-migration.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15472,7 +14812,7 @@
     "title": "How would you test a migrated component?",
     "filename": "009-017-how-would-you-test-a-migrated-component.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-017-how-would-you-test-a-migrated-component.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15483,7 +14823,7 @@
     "title": "How do you run legacy and modern .NET components side by side?",
     "filename": "009-018-how-do-you-run-legacy-and-modern-net-components-side-by-side.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-018-how-do-you-run-legacy-and-modern-net-components-side-by-side.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15494,7 +14834,7 @@
     "title": "How do you measure modernisation progress?",
     "filename": "009-019-how-do-you-measure-modernisation-progress.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-019-how-do-you-measure-modernisation-progress.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15505,7 +14845,7 @@
     "title": "When should a legacy component not be modernised?",
     "filename": "009-020-when-should-a-legacy-component-not-be-modernised.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-020-when-should-a-legacy-component-not-be-modernised.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15516,7 +14856,7 @@
     "title": "How do you prioritise components for migration?",
     "filename": "009-021-how-do-you-prioritise-components-for-migration.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-021-how-do-you-prioritise-components-for-migration.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15527,7 +14867,7 @@
     "title": "How do you maintain feature delivery during modernisation?",
     "filename": "009-022-how-do-you-maintain-feature-delivery-during-modernisation.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-022-how-do-you-maintain-feature-delivery-during-modernisation.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15538,7 +14878,7 @@
     "title": "How would you manage rollback during migration?",
     "filename": "009-023-how-would-you-manage-rollback-during-migration.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-023-how-would-you-manage-rollback-during-migration.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15549,7 +14889,7 @@
     "title": "What does incremental modernisation mean to you?",
     "filename": "009-024-what-does-incremental-modernisation-mean-to-you.md",
     "relativePath": "009-NET-Framework-to-Modern-NET/009-024-what-does-incremental-modernisation-mean-to-you.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15560,7 +14900,7 @@
     "title": "What is the Strangler Fig pattern?",
     "filename": "010-001-what-is-the-strangler-fig-pattern.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-001-what-is-the-strangler-fig-pattern.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15571,7 +14911,7 @@
     "title": "When would you use the Strangler Fig pattern?",
     "filename": "010-002-when-would-you-use-the-strangler-fig-pattern.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-002-when-would-you-use-the-strangler-fig-pattern.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15582,7 +14922,7 @@
     "title": "When would you not use the Strangler Fig pattern?",
     "filename": "010-003-when-would-you-not-use-the-strangler-fig-pattern.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-003-when-would-you-not-use-the-strangler-fig-pattern.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15593,7 +14933,7 @@
     "title": "How do you route traffic between legacy and modern components?",
     "filename": "010-004-how-do-you-route-traffic-between-legacy-and-modern-components.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-004-how-do-you-route-traffic-between-legacy-and-modern-components.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15604,7 +14944,7 @@
     "title": "How do you gradually retire legacy functionality?",
     "filename": "010-005-how-do-you-gradually-retire-legacy-functionality.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-005-how-do-you-gradually-retire-legacy-functionality.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15615,7 +14955,7 @@
     "title": "What is an anti-corruption layer?",
     "filename": "010-006-what-is-an-anti-corruption-layer.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-006-what-is-an-anti-corruption-layer.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15626,7 +14966,7 @@
     "title": "Why do we need an anti-corruption layer?",
     "filename": "010-007-why-do-we-need-an-anti-corruption-layer.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-007-why-do-we-need-an-anti-corruption-layer.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15637,7 +14977,7 @@
     "title": "Where would you place an anti-corruption layer?",
     "filename": "010-008-where-would-you-place-an-anti-corruption-layer.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-008-where-would-you-place-an-anti-corruption-layer.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15648,7 +14988,7 @@
     "title": "How do you prevent a legacy domain model leaking into a new system?",
     "filename": "010-009-how-do-you-prevent-a-legacy-domain-model-leaking-into-a-new-system.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-009-how-do-you-prevent-a-legacy-domain-model-leaking-into-a-new-system.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15659,7 +14999,7 @@
     "title": "What is incremental migration?",
     "filename": "010-010-what-is-incremental-migration.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-010-what-is-incremental-migration.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15670,7 +15010,7 @@
     "title": "Compare Strangler Fig with a big-bang rewrite.",
     "filename": "010-011-compare-strangler-fig-with-a-big-bang-rewrite.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-011-compare-strangler-fig-with-a-big-bang-rewrite.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15681,7 +15021,7 @@
     "title": "How do you handle shared databases during migration?",
     "filename": "010-012-how-do-you-handle-shared-databases-during-migration.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-012-how-do-you-handle-shared-databases-during-migration.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15692,7 +15032,7 @@
     "title": "Would the legacy and modern applications share the same database?",
     "filename": "010-013-would-the-legacy-and-modern-applications-share-the-same-database.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-013-would-the-legacy-and-modern-applications-share-the-same-database.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15703,7 +15043,7 @@
     "title": "What problems can a shared database create?",
     "filename": "010-014-what-problems-can-a-shared-database-create.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-014-what-problems-can-a-shared-database-create.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15714,7 +15054,7 @@
     "title": "How would you separate data ownership incrementally?",
     "filename": "010-015-how-would-you-separate-data-ownership-incrementally.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-015-how-would-you-separate-data-ownership-incrementally.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15725,7 +15065,7 @@
     "title": "How do you handle transactions across old and new components?",
     "filename": "010-016-how-do-you-handle-transactions-across-old-and-new-components.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-016-how-do-you-handle-transactions-across-old-and-new-components.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15736,7 +15076,7 @@
     "title": "How do you migrate without downtime?",
     "filename": "010-017-how-do-you-migrate-without-downtime.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-017-how-do-you-migrate-without-downtime.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15747,7 +15087,7 @@
     "title": "How would you validate that the new component behaves like the legacy component?",
     "filename": "010-018-how-would-you-validate-that-the-new-component-behaves-like-the-legacy-component.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-018-how-would-you-validate-that-the-new-component-behaves-like-the-legacy-component.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15758,7 +15098,7 @@
     "title": "What is parallel running?",
     "filename": "010-019-what-is-parallel-running.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-019-what-is-parallel-running.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15769,7 +15109,7 @@
     "title": "What is shadow traffic?",
     "filename": "010-020-what-is-shadow-traffic.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-020-what-is-shadow-traffic.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15780,7 +15120,7 @@
     "title": "How would you roll back to the legacy implementation?",
     "filename": "010-021-how-would-you-roll-back-to-the-legacy-implementation.md",
     "relativePath": "010-Strangler-Fig-and-Migration-Patterns/010-021-how-would-you-roll-back-to-the-legacy-implementation.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15791,7 +15131,7 @@
     "title": "How do you define application architecture?",
     "filename": "011-001-how-do-you-define-application-architecture.md",
     "relativePath": "011-Architecture-and-Design/011-001-how-do-you-define-application-architecture.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15802,7 +15142,7 @@
     "title": "What makes an architecture good?",
     "filename": "011-002-what-makes-an-architecture-good.md",
     "relativePath": "011-Architecture-and-Design/011-002-what-makes-an-architecture-good.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15813,7 +15153,7 @@
     "title": "How do you balance architecture and delivery speed?",
     "filename": "011-003-how-do-you-balance-architecture-and-delivery-speed.md",
     "relativePath": "011-Architecture-and-Design/011-003-how-do-you-balance-architecture-and-delivery-speed.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15824,7 +15164,7 @@
     "title": "How do you avoid overengineering?",
     "filename": "011-004-how-do-you-avoid-overengineering.md",
     "relativePath": "011-Architecture-and-Design/011-004-how-do-you-avoid-overengineering.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15835,7 +15175,7 @@
     "title": "Modular monolith versus microservices: when would you choose each?",
     "filename": "011-005-modular-monolith-versus-microservices-when-would-you-choose-each.md",
     "relativePath": "011-Architecture-and-Design/011-005-modular-monolith-versus-microservices-when-would-you-choose-each.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15846,7 +15186,7 @@
     "title": "When should you use microservices?",
     "filename": "011-006-when-should-you-use-microservices.md",
     "relativePath": "011-Architecture-and-Design/011-006-when-should-you-use-microservices.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15857,7 +15197,7 @@
     "title": "When should you avoid microservices?",
     "filename": "011-007-when-should-you-avoid-microservices.md",
     "relativePath": "011-Architecture-and-Design/011-007-when-should-you-avoid-microservices.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15868,7 +15208,7 @@
     "title": "How do you identify service boundaries?",
     "filename": "011-008-how-do-you-identify-service-boundaries.md",
     "relativePath": "011-Architecture-and-Design/011-008-how-do-you-identify-service-boundaries.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15879,7 +15219,7 @@
     "title": "What is a bounded context?",
     "filename": "011-009-what-is-a-bounded-context.md",
     "relativePath": "011-Architecture-and-Design/011-009-what-is-a-bounded-context.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15890,7 +15230,7 @@
     "title": "Explain Domain-Driven Design.",
     "filename": "011-010-explain-domain-driven-design.md",
     "relativePath": "011-Architecture-and-Design/011-010-explain-domain-driven-design.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15901,7 +15241,7 @@
     "title": "What is an aggregate?",
     "filename": "011-011-what-is-an-aggregate.md",
     "relativePath": "011-Architecture-and-Design/011-011-what-is-an-aggregate.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15912,7 +15252,7 @@
     "title": "What is an aggregate root?",
     "filename": "011-012-what-is-an-aggregate-root.md",
     "relativePath": "011-Architecture-and-Design/011-012-what-is-an-aggregate-root.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15923,7 +15263,7 @@
     "title": "What is a domain event?",
     "filename": "011-013-what-is-a-domain-event.md",
     "relativePath": "011-Architecture-and-Design/011-013-what-is-a-domain-event.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15934,7 +15274,7 @@
     "title": "Domain event versus integration event?",
     "filename": "011-014-domain-event-versus-integration-event.md",
     "relativePath": "011-Architecture-and-Design/011-014-domain-event-versus-integration-event.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15945,7 +15285,7 @@
     "title": "Explain Clean Architecture.",
     "filename": "011-015-explain-clean-architecture.md",
     "relativePath": "011-Architecture-and-Design/011-015-explain-clean-architecture.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15956,7 +15296,7 @@
     "title": "What are the layers in Clean Architecture?",
     "filename": "011-016-what-are-the-layers-in-clean-architecture.md",
     "relativePath": "011-Architecture-and-Design/011-016-what-are-the-layers-in-clean-architecture.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15967,7 +15307,7 @@
     "title": "Where should business logic live?",
     "filename": "011-017-where-should-business-logic-live.md",
     "relativePath": "011-Architecture-and-Design/011-017-where-should-business-logic-live.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15978,7 +15318,7 @@
     "title": "Should the domain layer reference Entity Framework?",
     "filename": "011-018-should-the-domain-layer-reference-entity-framework.md",
     "relativePath": "011-Architecture-and-Design/011-018-should-the-domain-layer-reference-entity-framework.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -15989,7 +15329,7 @@
     "title": "Should the controller directly call the repository?",
     "filename": "011-019-should-the-controller-directly-call-the-repository.md",
     "relativePath": "011-Architecture-and-Design/011-019-should-the-controller-directly-call-the-repository.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16000,7 +15340,7 @@
     "title": "What is dependency inversion?",
     "filename": "011-020-what-is-dependency-inversion.md",
     "relativePath": "011-Architecture-and-Design/011-020-what-is-dependency-inversion.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16011,7 +15351,7 @@
     "title": "Explain SOLID with practical examples.",
     "filename": "011-021-explain-solid-with-practical-examples.md",
     "relativePath": "011-Architecture-and-Design/011-021-explain-solid-with-practical-examples.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16022,7 +15362,7 @@
     "title": "Give a real example of the Single Responsibility Principle.",
     "filename": "011-022-give-a-real-example-of-the-single-responsibility-principle.md",
     "relativePath": "011-Architecture-and-Design/011-022-give-a-real-example-of-the-single-responsibility-principle.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16033,7 +15373,7 @@
     "title": "What is tight coupling, and how do you reduce it?",
     "filename": "011-023-what-is-tight-coupling-and-how-do-you-reduce-it.md",
     "relativePath": "011-Architecture-and-Design/011-023-what-is-tight-coupling-and-how-do-you-reduce-it.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16044,7 +15384,7 @@
     "title": "What is cohesion?",
     "filename": "011-024-what-is-cohesion.md",
     "relativePath": "011-Architecture-and-Design/011-024-what-is-cohesion.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16055,7 +15395,7 @@
     "title": "How do you make architecture decisions?",
     "filename": "011-025-how-do-you-make-architecture-decisions.md",
     "relativePath": "011-Architecture-and-Design/011-025-how-do-you-make-architecture-decisions.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16066,7 +15406,7 @@
     "title": "How do you document architecture decisions?",
     "filename": "011-026-how-do-you-document-architecture-decisions.md",
     "relativePath": "011-Architecture-and-Design/011-026-how-do-you-document-architecture-decisions.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16077,7 +15417,7 @@
     "title": "What is an ADR?",
     "filename": "011-027-what-is-an-adr.md",
     "relativePath": "011-Architecture-and-Design/011-027-what-is-an-adr.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16088,7 +15428,7 @@
     "title": "How do you ensure developers follow architecture standards?",
     "filename": "011-028-how-do-you-ensure-developers-follow-architecture-standards.md",
     "relativePath": "011-Architecture-and-Design/011-028-how-do-you-ensure-developers-follow-architecture-standards.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16099,7 +15439,7 @@
     "title": "What happens when you disagree with a Solution Architect?",
     "filename": "011-029-what-happens-when-you-disagree-with-a-solution-architect.md",
     "relativePath": "011-Architecture-and-Design/011-029-what-happens-when-you-disagree-with-a-solution-architect.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16110,7 +15450,7 @@
     "title": "How do you review an architecture?",
     "filename": "011-030-how-do-you-review-an-architecture.md",
     "relativePath": "011-Architecture-and-Design/011-030-how-do-you-review-an-architecture.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16121,7 +15461,7 @@
     "title": "What quality attributes do you consider?",
     "filename": "011-031-what-quality-attributes-do-you-consider.md",
     "relativePath": "011-Architecture-and-Design/011-031-what-quality-attributes-do-you-consider.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16132,7 +15472,7 @@
     "title": "How do you design for scalability?",
     "filename": "011-032-how-do-you-design-for-scalability.md",
     "relativePath": "011-Architecture-and-Design/011-032-how-do-you-design-for-scalability.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16143,7 +15483,7 @@
     "title": "How do you design for maintainability?",
     "filename": "011-033-how-do-you-design-for-maintainability.md",
     "relativePath": "011-Architecture-and-Design/011-033-how-do-you-design-for-maintainability.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16154,7 +15494,7 @@
     "title": "How do you design for resilience?",
     "filename": "011-034-how-do-you-design-for-resilience.md",
     "relativePath": "011-Architecture-and-Design/011-034-how-do-you-design-for-resilience.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16165,7 +15505,7 @@
     "title": "How do you design for observability?",
     "filename": "011-035-how-do-you-design-for-observability.md",
     "relativePath": "011-Architecture-and-Design/011-035-how-do-you-design-for-observability.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16176,7 +15516,7 @@
     "title": "How do you design a REST API?",
     "filename": "012-001-how-do-you-design-a-rest-api.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-001-how-do-you-design-a-rest-api.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16187,7 +15527,7 @@
     "title": "What makes a good REST API?",
     "filename": "012-002-what-makes-a-good-rest-api.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-002-what-makes-a-good-rest-api.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16198,7 +15538,7 @@
     "title": "How do you name API resources?",
     "filename": "012-003-how-do-you-name-api-resources.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-003-how-do-you-name-api-resources.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16209,7 +15549,7 @@
     "title": "GET versus POST?",
     "filename": "012-004-get-versus-post.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-004-get-versus-post.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16220,7 +15560,7 @@
     "title": "PUT versus PATCH?",
     "filename": "012-005-put-versus-patch.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-005-put-versus-patch.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16231,7 +15571,7 @@
     "title": "Is PUT idempotent?",
     "filename": "012-006-is-put-idempotent.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-006-is-put-idempotent.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16242,7 +15582,7 @@
     "title": "Is POST idempotent?",
     "filename": "012-007-is-post-idempotent.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-007-is-post-idempotent.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16253,7 +15593,7 @@
     "title": "How do you make a POST request idempotent?",
     "filename": "012-008-how-do-you-make-a-post-request-idempotent.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-008-how-do-you-make-a-post-request-idempotent.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16264,7 +15604,7 @@
     "title": "What is an idempotency key?",
     "filename": "012-009-what-is-an-idempotency-key.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-009-what-is-an-idempotency-key.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16275,7 +15615,7 @@
     "title": "Where would you store an idempotency key?",
     "filename": "012-010-where-would-you-store-an-idempotency-key.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-010-where-would-you-store-an-idempotency-key.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16286,7 +15626,7 @@
     "title": "How do you handle duplicate API requests?",
     "filename": "012-011-how-do-you-handle-duplicate-api-requests.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-011-how-do-you-handle-duplicate-api-requests.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16297,7 +15637,7 @@
     "title": "How do you version an API?",
     "filename": "012-012-how-do-you-version-an-api.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-012-how-do-you-version-an-api.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16308,7 +15648,7 @@
     "title": "URL versioning versus header versioning?",
     "filename": "012-013-url-versioning-versus-header-versioning.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-013-url-versioning-versus-header-versioning.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16319,7 +15659,7 @@
     "title": "How do you introduce a breaking API change?",
     "filename": "012-014-how-do-you-introduce-a-breaking-api-change.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-014-how-do-you-introduce-a-breaking-api-change.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16330,7 +15670,7 @@
     "title": "How do you maintain backward compatibility?",
     "filename": "012-015-how-do-you-maintain-backward-compatibility.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-015-how-do-you-maintain-backward-compatibility.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16341,7 +15681,7 @@
     "title": "How long do you support an old API version?",
     "filename": "012-016-how-long-do-you-support-an-old-api-version.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-016-how-long-do-you-support-an-old-api-version.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16352,7 +15692,7 @@
     "title": "How do you deprecate an API?",
     "filename": "012-017-how-do-you-deprecate-an-api.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-017-how-do-you-deprecate-an-api.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16363,7 +15703,7 @@
     "title": "How do frontend and backend teams agree on an API contract?",
     "filename": "012-018-how-do-frontend-and-backend-teams-agree-on-an-api-contract.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-018-how-do-frontend-and-backend-teams-agree-on-an-api-contract.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16374,7 +15714,7 @@
     "title": "What is contract-first API development?",
     "filename": "012-019-what-is-contract-first-api-development.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-019-what-is-contract-first-api-development.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16385,7 +15725,7 @@
     "title": "What is OpenAPI?",
     "filename": "012-020-what-is-openapi.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-020-what-is-openapi.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16396,7 +15736,7 @@
     "title": "How do you validate API contracts?",
     "filename": "012-021-how-do-you-validate-api-contracts.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-021-how-do-you-validate-api-contracts.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16407,7 +15747,7 @@
     "title": "What is consumer-driven contract testing?",
     "filename": "012-022-what-is-consumer-driven-contract-testing.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-022-what-is-consumer-driven-contract-testing.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16418,7 +15758,7 @@
     "title": "What is Pact testing?",
     "filename": "012-023-what-is-pact-testing.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-023-what-is-pact-testing.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16429,7 +15769,7 @@
     "title": "How do you design consistent API errors?",
     "filename": "012-024-how-do-you-design-consistent-api-errors.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-024-how-do-you-design-consistent-api-errors.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16440,7 +15780,7 @@
     "title": "What is ProblemDetails?",
     "filename": "012-025-what-is-problemdetails.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-025-what-is-problemdetails.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16451,7 +15791,7 @@
     "title": "How do you implement global exception handling?",
     "filename": "012-026-how-do-you-implement-global-exception-handling.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-026-how-do-you-implement-global-exception-handling.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16462,7 +15802,7 @@
     "title": "Where should validation happen?",
     "filename": "012-027-where-should-validation-happen.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-027-where-should-validation-happen.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16473,7 +15813,7 @@
     "title": "How do you handle pagination?",
     "filename": "012-028-how-do-you-handle-pagination.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-028-how-do-you-handle-pagination.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16484,7 +15824,7 @@
     "title": "Offset versus cursor pagination?",
     "filename": "012-029-offset-versus-cursor-pagination.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-029-offset-versus-cursor-pagination.md",
-    "status": "Completed",
+    "status": "Already complete",
     "validation": "all structural checks passed",
     "error": ""
   },
@@ -16495,6 +15835,666 @@
     "title": "How do you handle filtering and sorting?",
     "filename": "012-030-how-do-you-handle-filtering-and-sorting.md",
     "relativePath": "012-API-Design-and-Integration-Governance/012-030-how-do-you-handle-filtering-and-sorting.md",
+    "status": "Already complete",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:31",
+    "number": "31",
+    "technology": "API Design and Integration Governance",
+    "title": "How do you secure an API?",
+    "filename": "012-031-how-do-you-secure-an-api.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-031-how-do-you-secure-an-api.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:32",
+    "number": "32",
+    "technology": "API Design and Integration Governance",
+    "title": "How do you implement rate limiting and throttling?",
+    "filename": "012-032-how-do-you-implement-rate-limiting-and-throttling.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-032-how-do-you-implement-rate-limiting-and-throttling.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:33",
+    "number": "33",
+    "technology": "API Design and Integration Governance",
+    "title": "What is a correlation ID?",
+    "filename": "012-033-what-is-a-correlation-id.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-033-what-is-a-correlation-id.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:34",
+    "number": "34",
+    "technology": "API Design and Integration Governance",
+    "title": "How do you propagate a correlation ID?",
+    "filename": "012-034-how-do-you-propagate-a-correlation-id.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-034-how-do-you-propagate-a-correlation-id.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:35",
+    "number": "35",
+    "technology": "API Design and Integration Governance",
+    "title": "How do you trace a request across microservices?",
+    "filename": "012-035-how-do-you-trace-a-request-across-microservices.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-035-how-do-you-trace-a-request-across-microservices.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:36",
+    "number": "36",
+    "technology": "API Design and Integration Governance",
+    "title": "How do you handle API timeouts and retries?",
+    "filename": "012-036-how-do-you-handle-api-timeouts-and-retries.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-036-how-do-you-handle-api-timeouts-and-retries.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:37",
+    "number": "37",
+    "technology": "API Design and Integration Governance",
+    "title": "Which HTTP errors should be retried?",
+    "filename": "012-037-which-http-errors-should-be-retried.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-037-which-http-errors-should-be-retried.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:38",
+    "number": "38",
+    "technology": "API Design and Integration Governance",
+    "title": "Why should you not retry every request?",
+    "filename": "012-038-why-should-you-not-retry-every-request.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-038-why-should-you-not-retry-every-request.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:39",
+    "number": "39",
+    "technology": "API Design and Integration Governance",
+    "title": "What are exponential backoff and jitter?",
+    "filename": "012-039-what-are-exponential-backoff-and-jitter.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-039-what-are-exponential-backoff-and-jitter.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:40",
+    "number": "40",
+    "technology": "API Design and Integration Governance",
+    "title": "What is a circuit breaker?",
+    "filename": "012-040-what-is-a-circuit-breaker.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-040-what-is-a-circuit-breaker.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:41",
+    "number": "41",
+    "technology": "API Design and Integration Governance",
+    "title": "API Gateway versus reverse proxy?",
+    "filename": "012-041-api-gateway-versus-reverse-proxy.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-041-api-gateway-versus-reverse-proxy.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:42",
+    "number": "42",
+    "technology": "API Design and Integration Governance",
+    "title": "What should be handled at Azure API Management?",
+    "filename": "012-042-what-should-be-handled-at-azure-api-management.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-042-what-should-be-handled-at-azure-api-management.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "12:43",
+    "number": "43",
+    "technology": "API Design and Integration Governance",
+    "title": "What should remain in application code?",
+    "filename": "012-043-what-should-remain-in-application-code.md",
+    "relativePath": "012-API-Design-and-Integration-Governance/012-043-what-should-remain-in-application-code.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:1",
+    "number": "1",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find duplicate items in a list.",
+    "filename": "013-001-find-duplicate-items-in-a-list.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-001-find-duplicate-items-in-a-list.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:2",
+    "number": "2",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Remove duplicates from a list.",
+    "filename": "013-002-remove-duplicates-from-a-list.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-002-remove-duplicates-from-a-list.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:3",
+    "number": "3",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find the first non-repeating character.",
+    "filename": "013-003-find-the-first-non-repeating-character.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-003-find-the-first-non-repeating-character.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:4",
+    "number": "4",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Reverse a string.",
+    "filename": "013-004-reverse-a-string.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-004-reverse-a-string.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:5",
+    "number": "5",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Count character frequency.",
+    "filename": "013-005-count-character-frequency.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-005-count-character-frequency.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:6",
+    "number": "6",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Group orders by customer.",
+    "filename": "013-006-group-orders-by-customer.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-006-group-orders-by-customer.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:7",
+    "number": "7",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Calculate total order value per customer.",
+    "filename": "013-007-calculate-total-order-value-per-customer.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-007-calculate-total-order-value-per-customer.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:8",
+    "number": "8",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find the top three customers by order value.",
+    "filename": "013-008-find-the-top-three-customers-by-order-value.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-008-find-the-top-three-customers-by-order-value.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:9",
+    "number": "9",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Filter completed orders.",
+    "filename": "013-009-filter-completed-orders.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-009-filter-completed-orders.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:10",
+    "number": "10",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Sort customers by total spend.",
+    "filename": "013-010-sort-customers-by-total-spend.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-010-sort-customers-by-total-spend.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:11",
+    "number": "11",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find duplicate transactions.",
+    "filename": "013-011-find-duplicate-transactions.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-011-find-duplicate-transactions.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:12",
+    "number": "12",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Merge two collections.",
+    "filename": "013-012-merge-two-collections.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-012-merge-two-collections.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:13",
+    "number": "13",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find missing numbers in a sequence.",
+    "filename": "013-013-find-missing-numbers-in-a-sequence.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-013-find-missing-numbers-in-a-sequence.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:14",
+    "number": "14",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find the second-highest value.",
+    "filename": "013-014-find-the-second-highest-value.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-014-find-the-second-highest-value.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:15",
+    "number": "15",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Group employees by department.",
+    "filename": "013-015-group-employees-by-department.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-015-group-employees-by-department.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:16",
+    "number": "16",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Find the highest-paid employee in each department.",
+    "filename": "013-016-find-the-highest-paid-employee-in-each-department.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-016-find-the-highest-paid-employee-in-each-department.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:17",
+    "number": "17",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Write a LINQ GroupBy.",
+    "filename": "013-017-write-a-linq-groupby.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-017-write-a-linq-groupby.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:18",
+    "number": "18",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Explain deferred execution.",
+    "filename": "013-018-explain-deferred-execution.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-018-explain-deferred-execution.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:19",
+    "number": "19",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What happens when ToList is called?",
+    "filename": "013-019-what-happens-when-tolist-is-called.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-019-what-happens-when-tolist-is-called.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:20",
+    "number": "20",
+    "technology": "C# Live Coding and LINQ",
+    "title": "First versus FirstOrDefault?",
+    "filename": "013-020-first-versus-firstordefault.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-020-first-versus-firstordefault.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:21",
+    "number": "21",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Single versus SingleOrDefault?",
+    "filename": "013-021-single-versus-singleordefault.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-021-single-versus-singleordefault.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:22",
+    "number": "22",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Any versus Count greater than zero?",
+    "filename": "013-022-any-versus-count-greater-than-zero.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-022-any-versus-count-greater-than-zero.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:23",
+    "number": "23",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Select versus SelectMany?",
+    "filename": "013-023-select-versus-selectmany.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-023-select-versus-selectmany.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:24",
+    "number": "24",
+    "technology": "C# Live Coding and LINQ",
+    "title": "IEnumerable versus IQueryable?",
+    "filename": "013-024-ienumerable-versus-iqueryable.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-024-ienumerable-versus-iqueryable.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:25",
+    "number": "25",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Where is an IQueryable query executed?",
+    "filename": "013-025-where-is-an-iqueryable-query-executed.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-025-where-is-an-iqueryable-query-executed.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:26",
+    "number": "26",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What happens if you call ToList too early?",
+    "filename": "013-026-what-happens-if-you-call-tolist-too-early.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-026-what-happens-if-you-call-tolist-too-early.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:27",
+    "number": "27",
+    "technology": "C# Live Coding and LINQ",
+    "title": "How does EF Core translate LINQ to SQL?",
+    "filename": "013-027-how-does-ef-core-translate-linq-to-sql.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-027-how-does-ef-core-translate-linq-to-sql.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:28",
+    "number": "28",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What happens if EF cannot translate a LINQ expression?",
+    "filename": "013-028-what-happens-if-ef-cannot-translate-a-linq-expression.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-028-what-happens-if-ef-cannot-translate-a-linq-expression.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:29",
+    "number": "29",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Write an asynchronous method.",
+    "filename": "013-029-write-an-asynchronous-method.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-029-write-an-asynchronous-method.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:30",
+    "number": "30",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Refactor .Result to await.",
+    "filename": "013-030-refactor-result-to-await.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-030-refactor-result-to-await.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:31",
+    "number": "31",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Refactor .Wait to await.",
+    "filename": "013-031-refactor-wait-to-await.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-031-refactor-wait-to-await.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:32",
+    "number": "32",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Explain why sync-over-async is problematic.",
+    "filename": "013-032-explain-why-sync-over-async-is-problematic.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-032-explain-why-sync-over-async-is-problematic.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:33",
+    "number": "33",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Does await create a thread?",
+    "filename": "013-033-does-await-create-a-thread.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-033-does-await-create-a-thread.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:34",
+    "number": "34",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What happens internally when await is reached?",
+    "filename": "013-034-what-happens-internally-when-await-is-reached.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-034-what-happens-internally-when-await-is-reached.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:35",
+    "number": "35",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What is a Task?",
+    "filename": "013-035-what-is-a-task.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-035-what-is-a-task.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:36",
+    "number": "36",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Task versus Thread?",
+    "filename": "013-036-task-versus-thread.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-036-task-versus-thread.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:37",
+    "number": "37",
+    "technology": "C# Live Coding and LINQ",
+    "title": "How do you run independent asynchronous operations concurrently?",
+    "filename": "013-037-how-do-you-run-independent-asynchronous-operations-concurrently.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-037-how-do-you-run-independent-asynchronous-operations-concurrently.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:38",
+    "number": "38",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Task.WhenAll versus sequential awaits?",
+    "filename": "013-038-task-whenall-versus-sequential-awaits.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-038-task-whenall-versus-sequential-awaits.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:39",
+    "number": "39",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What is a CancellationToken?",
+    "filename": "013-039-what-is-a-cancellationtoken.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-039-what-is-a-cancellationtoken.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:40",
+    "number": "40",
+    "technology": "C# Live Coding and LINQ",
+    "title": "Why should APIs accept cancellation tokens?",
+    "filename": "013-040-why-should-apis-accept-cancellation-tokens.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-040-why-should-apis-accept-cancellation-tokens.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:41",
+    "number": "41",
+    "technology": "C# Live Coding and LINQ",
+    "title": "How do you handle exceptions with Task.WhenAll?",
+    "filename": "013-041-how-do-you-handle-exceptions-with-task-whenall.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-041-how-do-you-handle-exceptions-with-task-whenall.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:42",
+    "number": "42",
+    "technology": "C# Live Coding and LINQ",
+    "title": "How would you refactor a large service class?",
+    "filename": "013-042-how-would-you-refactor-a-large-service-class.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-042-how-would-you-refactor-a-large-service-class.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:43",
+    "number": "43",
+    "technology": "C# Live Coding and LINQ",
+    "title": "How would you make this code testable?",
+    "filename": "013-043-how-would-you-make-this-code-testable.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-043-how-would-you-make-this-code-testable.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:44",
+    "number": "44",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What dependencies would you inject?",
+    "filename": "013-044-what-dependencies-would-you-inject.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-044-what-dependencies-would-you-inject.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:45",
+    "number": "45",
+    "technology": "C# Live Coding and LINQ",
+    "title": "What problems do you see in this code?",
+    "filename": "013-045-what-problems-do-you-see-in-this-code.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-045-what-problems-do-you-see-in-this-code.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "13:46",
+    "number": "46",
+    "technology": "C# Live Coding and LINQ",
+    "title": "How would you improve this code for production?",
+    "filename": "013-046-how-would-you-improve-this-code-for-production.md",
+    "relativePath": "013-C-Live-Coding-and-LINQ/013-046-how-would-you-improve-this-code-for-production.md",
+    "status": "Completed",
+    "validation": "all structural checks passed",
+    "error": ""
+  },
+  {
+    "key": "14:1",
+    "number": "1",
+    "technology": "Async Await and .NET Internals",
+    "title": "Explain async and await internally.",
+    "filename": "014-001-explain-async-and-await-internally.md",
+    "relativePath": "014-Async-Await-and-NET-Internals/014-001-explain-async-and-await-internally.md",
     "status": "Completed",
     "validation": "all structural checks passed",
     "error": ""

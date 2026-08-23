@@ -2,7 +2,7 @@
 
 Total questions: 17
 
-1. [Explain async and await internally.](./014-001-explain-async-and-await-internally.md) — Failed
+1. [Explain async and await internally.](./014-001-explain-async-and-await-internally.md) — Completed
 2. [Does async create a new thread?](./014-002-does-async-create-a-new-thread.md) — Failed
 3. [What happens to the HTTP request thread during an I/O operation?](./014-003-what-happens-to-the-http-request-thread-during-an-i-o-operation.md) — Failed
 4. [Who resumes the method after an await?](./014-004-who-resumes-the-method-after-an-await.md) — Failed
