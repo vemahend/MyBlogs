@@ -17,7 +17,19 @@ function findMarkdownFiles(directory) {
   });
 }
 
-const files = findMarkdownFiles(root).sort((a, b) => a.localeCompare(b));
+function librarySort(a, b) {
+  const directoryA = path.posix.dirname(a);
+  const directoryB = path.posix.dirname(b);
+  const directoryOrder = directoryA.localeCompare(directoryB, undefined, { numeric: true, sensitivity: 'base' });
+  if (directoryOrder !== 0) return directoryOrder;
+  const nameA = path.posix.basename(a);
+  const nameB = path.posix.basename(b);
+  if (nameA.toLowerCase() === 'readme.md') return -1;
+  if (nameB.toLowerCase() === 'readme.md') return 1;
+  return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: 'base' });
+}
+
+const files = findMarkdownFiles(root).sort(librarySort);
 const documents = files.map(filePath => ({
   path: filePath,
   content: fs.readFileSync(path.join(root, filePath), 'utf8')

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="reader.css">
   <link rel="stylesheet" href="reader-typography.css">
   <link rel="stylesheet" href="card-motion.css">
+  <link rel="stylesheet" href="folder-navigation.css">
 </head>
 <body>
   <header class="site-header">
@@ -39,6 +40,12 @@
         <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search titles, topics, or content…" autocomplete="off"><kbd>⌘ K</kbd></label>
       </div>
       <div class="filter-row" id="filters"></div>
+      <div class="folder-tools">
+        <label for="folderSearch">Technology folder</label>
+        <input id="folderSearch" type="search" placeholder="Find a folder, e.g. Angular…" autocomplete="off">
+        <span id="resultCount" aria-live="polite"></span>
+      </div>
+      <div class="folder-filter-row" id="folderFilters" aria-label="Technology folder filters"></div>
       <div class="article-grid" id="articleGrid" aria-live="polite"></div>
       <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No notes found</h3><p>Try another search or choose a different topic.</p></div>
     </section>
@@ -62,7 +69,7 @@
 
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="library-files.js?v=1787474779296"></script>
+  <script src="library-files.js?v=1787475799905"></script>
   <script src="reader.js"></script>
 </body>
 </html>
