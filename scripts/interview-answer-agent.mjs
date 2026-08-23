@@ -18,6 +18,19 @@ const limitArg = process.argv.find((value) => value.startsWith('--limit='));
 const limit = limitArg ? Number(limitArg.split('=')[1]) : Number.POSITIVE_INFINITY;
 
 const requiredSections = [
+  '## 1. What is it?',
+  '## 2. Why is it important?',
+  '## 3. How does it work?',
+  '## 4. Practical example',
+  '## 5. Scenario-based interview answer',
+  '## 6. Code example',
+  '## 7. Common mistakes',
+  '## 8. Follow-up interview questions',
+];
+
+// Answers completed before Prompt.md was revised remain valid and must not be
+// overwritten merely because the requested teaching structure changed.
+const legacyRequiredSections = [
   '## 1. What problem does it solve?',
   '## 2. Explain it in simple language',
   '## 3. How does it work internally?',
@@ -151,14 +164,22 @@ function inspectAnswer(question) {
     `**Technology:** ${question.section.title}`,
     `**Source question:** ${question.exact}`,
   ];
-  for (const marker of [...requiredMetadata, ...requiredSections]) {
+  for (const marker of requiredMetadata) {
     if (!body.includes(marker)) return { complete: false, reason: `missing required marker: ${marker}` };
+  }
+  const usesCurrentStructure = requiredSections.every((marker) => body.includes(marker));
+  const usesLegacyStructure = legacyRequiredSections.every((marker) => body.includes(marker));
+  if (!usesCurrentStructure && !usesLegacyStructure) {
+    const missing = requiredSections.find((marker) => !body.includes(marker));
+    return { complete: false, reason: `missing required marker: ${missing}` };
   }
   const fences = (body.match(/^```/gm) || []).length;
   if (fences % 2 !== 0) return { complete: false, reason: 'unbalanced Markdown code fences' };
-  if (body.trim().length < 3500) return { complete: false, reason: 'answer appears truncated (under 3,500 characters)' };
-  const ending = body.slice(-1800);
-  if (!ending.includes('## Revision card')) return { complete: false, reason: 'revision card is not at the completed ending' };
+  const minimumLength = usesLegacyStructure ? 3500 : 1800;
+  if (body.trim().length < minimumLength) return { complete: false, reason: `answer appears truncated (under ${minimumLength.toLocaleString()} characters)` };
+  const ending = body.slice(-2200);
+  if (usesLegacyStructure && !ending.includes('## Revision card')) return { complete: false, reason: 'revision card is not at the completed ending' };
+  if (usesCurrentStructure && !ending.includes('## 8. Follow-up interview questions')) return { complete: false, reason: 'follow-up interview questions are not at the completed ending' };
   return { complete: true, reason: 'all structural checks passed' };
 }
 
@@ -204,7 +225,7 @@ function writeIndexes(sections, records) {
 }
 
 function generationPrompt(question, authoritativePrompt) {
-  return `Generate exactly one interview answer file at ${path.relative(root, question.outputPath)}.\n\nSOURCE METADATA (preserve verbatim):\n# ${question.numberText}. ${question.title}\n\n**Technology:** ${question.section.title}\n\n**Source question:** ${question.exact}\n\nThe complete authoritative Prompt.md follows:\n\n---\n${authoritativePrompt}\n---\n\nBatch override: include exactly one unanswered scenario-based interview question in section 12, state that the reader can answer it during revision, do not answer it, then continue to and finish the Revision card. Use the exact 12 numbered section headings from Prompt.md and the exact heading “## Revision card”. Produce a focused, question-specific, senior-level answer of approximately 1,500–2,000 words. Use current supported APIs and mention versions where behavior depends on them. Do not modify any other answer file, source file, status file, or index. Write the Markdown file directly; do not merely print the answer in your final response.`;
+  return `Generate exactly one interview answer file at ${path.relative(root, question.outputPath)}.\n\nSOURCE METADATA (preserve verbatim):\n# ${question.numberText}. ${question.title}\n\n**Technology:** ${question.section.title}\n\n**Source question:** ${question.exact}\n\nThe complete authoritative Prompt.md follows:\n\n---\n${authoritativePrompt}\n---\n\nUse these exact Markdown headings: ${requiredSections.map((heading) => `“${heading}”`).join(', ')}. Follow the new Prompt.md exactly, including providing the scenario-based interview answer. Use simple, natural language suitable for senior interview revision. Keep the answer focused and question-specific. Use current supported APIs and mention versions where behavior depends on them. Do not modify any other answer file, source file, status file, or index. Write the Markdown file directly; do not merely print the answer in your final response.`;
 }
 
 function generate(question, authoritativePrompt) {
@@ -226,14 +247,15 @@ function generate(question, authoritativePrompt) {
 
 const source = readRequired(sourcePath, 'INTERVIEW_QUESTIONS.md');
 const authoritativePrompt = readRequired(promptPath, 'Prompt.md');
-for (const marker of requiredSections.slice(0, 12)) {
+const promptSectionLabels = requiredSections.map((marker) => marker.replace(/^##\s+/, ''));
+for (const marker of promptSectionLabels) {
   if (!authoritativePrompt.includes(marker)) fail(`Prompt.md cannot be parsed: missing “${marker}”.`);
 }
 
 const { sectionOccurrences: sections, questions } = parseQuestions(source);
 configurePaths(sections);
 const duplicates = duplicateTitles(questions);
-const preflight = `- Source: \`INTERVIEW_QUESTIONS.md\` (readable and non-empty)\n- Prompt: \`Prompt.md\` (readable, non-empty, and all 12 required sections parsed)\n- Technology/category sections: ${sections.length}\n- Questions: ${questions.length}\n- Missing numbers: 0\n- Duplicate numbers within a section: 0\n- Inconsistent numbering: 0\n- Empty questions: 0\n- Questions outside a section: 0\n- Duplicate titles across sections: ${duplicates.length} (preserved as distinct source questions)`;
+const preflight = `- Source: \`INTERVIEW_QUESTIONS.md\` (readable and non-empty)\n- Prompt: \`Prompt.md\` (readable, non-empty, and all 8 required sections parsed)\n- Technology/category sections: ${sections.length}\n- Questions: ${questions.length}\n- Missing numbers: 0\n- Duplicate numbers within a section: 0\n- Inconsistent numbering: 0\n- Empty questions: 0\n- Questions outside a section: 0\n- Duplicate titles across sections: ${duplicates.length} (preserved as distinct source questions)`;
 
 console.log(preflight.replaceAll('`', ''));
 if (duplicates.length) {

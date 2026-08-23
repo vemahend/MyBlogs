@@ -1758,3 +1758,221 @@ Duplicate titles were detected before generation and will retain distinct sectio
 [9/1500] Already complete: ASP.NET Core and Web API 3. How do middleware and filters differ in ASP.NET Core?
 [10/1500] Completed: ASP.NET Core and Web API 4. How would you design an API that needs idempotency?
 [11/1500] Completed: ASP.NET Core and Web API 5. How do you version APIs without breaking existing clients?
+[12/1500] Completed: ASP.NET Core and Web API 6. How would you troubleshoot a slow API endpoint in production?
+[13/1500] Completed: Microservices 1. What is the difference between microservices and a modular monolith?
+[14/1500] Completed: Microservices 2. How do you decide service boundaries?
+[15/1500] Completed: Microservices 3. How do you handle distributed transactions and eventual consistency?
+[16/1500] Completed: Microservices 4. What is the outbox pattern, and why is it useful?
+[17/1500] Completed: Microservices 5. How do you prevent cascading failures between services?
+[18/1500] Completed: Microservices 6. How would you migrate a monolithic .NET application to microservices?
+[19/1500] Completed: RabbitMQ and Messaging 1. Explain exchanges, queues, bindings, routing keys, publishers, and consumers.
+[20/1500] Completed: RabbitMQ and Messaging 2. How do acknowledgements make message processing reliable?
+[21/1500] Completed: RabbitMQ and Messaging 3. How do you handle poison messages and dead-letter queues?
+[22/1500] Completed: RabbitMQ and Messaging 4. How do you prevent duplicate message processing?
+[23/1500] Completed: RabbitMQ and Messaging 5. When would you choose RabbitMQ over direct API calls?
+[24/1500] Completed: RabbitMQ and Messaging 6. How would you debug a message that was published but not consumed?
+[25/1500] Completed: SQL Server and Data Access 1. How do you optimize a slow SQL query?
+[26/1500] Completed: SQL Server and Data Access 2. Explain clustered and non-clustered indexes.
+- Source: INTERVIEW_QUESTIONS.md (readable and non-empty)
+- Prompt: Prompt.md (readable, non-empty, and all 8 required sections parsed)
+- Technology/category sections: 109
+- Questions: 1500
+- Missing numbers: 0
+- Duplicate numbers within a section: 0
+- Inconsistent numbering: 0
+- Empty questions: 0
+- Questions outside a section: 0
+- Duplicate titles across sections: 34 (preserved as distinct source questions)
+Duplicate titles were detected before generation and will retain distinct section-prefixed paths:
+- How do you prevent duplicate message processing? [RabbitMQ and Messaging:42; Azure PaaS:378]
+- How do you secure an API? [API Design and Integration Governance:205; Security:448]
+- What is Managed Identity? [Azure PaaS:389; Security:451]
+- How do you mentor junior developers? [Leadership and AI-Assisted Engineering:76; Technical Leadership and Mentoring:519]
+- How do you read an execution plan? [SQL Server and Data Access:51; Common SQL Questions:727]
+- What is eventual consistency? [Messaging and Distributed Systems:404; Microservices Asked Questions:754]
+- How do you secure service-to-service communication? [Security:455; Microservices Asked Questions:756]
+- What is a dead-letter queue? [Azure PaaS:376; RabbitMQ Asked Questions:774]
+- What is a routing key? [RabbitMQ Asked Questions:770; RabbitMQ Fundamentals:958]
+- What is message durability? [RabbitMQ Asked Questions:773; Reliability and Delivery Guarantees:974]
+- What is at-least-once delivery? [Messaging and Distributed Systems:405; Reliability and Delivery Guarantees:979]
+- What is a dead-letter queue? [Azure PaaS:376; Reliability and Delivery Guarantees:983]
+- What is a poison message? [Messaging and Distributed Systems:416; Reliability and Delivery Guarantees:984]
+- How do you avoid retry storms? [Messaging and Distributed Systems:419; Reliability and Delivery Guarantees:987]
+- What is the difference between primary key, foreign key, unique key, and composite key? [Common SQL Questions:714; SQL Server Fundamentals:1073]
+- What is the difference between inner join, left join, right join, and full join? [Common SQL Questions:715; Joins, Filtering, and Aggregation:1084]
+- What is the difference between WHERE and HAVING? [Common SQL Questions:716; Joins, Filtering, and Aggregation:1086]
+- What is the difference between UNION and UNION ALL? [Common SQL Questions:717; Joins, Filtering, and Aggregation:1087]
+- What is a covering index? [Common SQL Questions:719; Indexes and Execution Plans:1100]
+- How do you read an execution plan? [SQL Server and Data Access:51; Indexes and Execution Plans:1104]
+- How do you optimize a slow SQL query? [SQL Server and Data Access:48; Performance Tuning:1110]
+- What is parameter sniffing? [Common SQL Questions:728; Performance Tuning:1111]
+- What is the dependency array in useEffect? [React / Angular Asked Questions:786; Hooks:1225]
+- What are Angular lifecycle hooks? [Angular and SPA Architecture:320; Components and Lifecycle:1434]
+- What is dependency injection in Angular? [React / Angular Asked Questions:790; Services and Dependency Injection:1460]
+- What are Angular services? [React / Angular Asked Questions:791; Services and Dependency Injection:1461]
+- What is least privilege? [Security:452; Authorization and Access Control:1570]
+- What is an access token? [Security:433; OAuth2 and OpenID Connect:1598]
+- What is a refresh token? [Security:434; OAuth2 and OpenID Connect:1599]
+- How do you implement rate limiting and throttling? [API Design and Integration Governance:206; ASP.NET Core Production APIs:1670]
+- What is consumer-driven contract testing? [API Design and Integration Governance:196; Microservices Deep Dive:1696]
+- How do publisher confirms differ from consumer acknowledgements? [Reliability and Delivery Guarantees:978; RabbitMQ Advanced:1705]
+- What is the difference between IEnumerable and IQueryable? [Common C# Questions:688; Answer Guides:1786]
+- How do you decide service boundaries? [Microservices:31; Answer Guides:1789]
+[1/1500] Already complete: C# and .NET 1. Explain IEnumerable, IQueryable, and List. When can IQueryable cause performance issues?
+[2/1500] Already complete: C# and .NET 2. What are async and await doing internally, and how do you avoid deadlocks?
+[3/1500] Already complete: C# and .NET 3. Explain Transient, Scoped, and Singleton dependency injection lifetimes with examples.
+[4/1500] Already complete: C# and .NET 4. How do you handle exceptions globally in a production ASP.NET Core API?
+[5/1500] Already complete: C# and .NET 5. What is LINQ deferred execution, and when can it surprise developers?
+[6/1500] Already complete: C# and .NET 6. How would you refactor a large service class with too many dependencies?
+[7/1500] Already complete: ASP.NET Core and Web API 1. How do you design a clean REST API for an enterprise application?
+[8/1500] Already complete: ASP.NET Core and Web API 2. What status codes do you use for validation failure, unauthorized access, conflict, and unexpected errors?
+[9/1500] Already complete: ASP.NET Core and Web API 3. How do middleware and filters differ in ASP.NET Core?
+[10/1500] Already complete: ASP.NET Core and Web API 4. How would you design an API that needs idempotency?
+[11/1500] Already complete: ASP.NET Core and Web API 5. How do you version APIs without breaking existing clients?
+[12/1500] Already complete: ASP.NET Core and Web API 6. How would you troubleshoot a slow API endpoint in production?
+[13/1500] Already complete: Microservices 1. What is the difference between microservices and a modular monolith?
+[14/1500] Already complete: Microservices 2. How do you decide service boundaries?
+[15/1500] Already complete: Microservices 3. How do you handle distributed transactions and eventual consistency?
+[16/1500] Already complete: Microservices 4. What is the outbox pattern, and why is it useful?
+[17/1500] Already complete: Microservices 5. How do you prevent cascading failures between services?
+[18/1500] Already complete: Microservices 6. How would you migrate a monolithic .NET application to microservices?
+[19/1500] Already complete: RabbitMQ and Messaging 1. Explain exchanges, queues, bindings, routing keys, publishers, and consumers.
+[20/1500] Already complete: RabbitMQ and Messaging 2. How do acknowledgements make message processing reliable?
+[21/1500] Already complete: RabbitMQ and Messaging 3. How do you handle poison messages and dead-letter queues?
+[22/1500] Already complete: RabbitMQ and Messaging 4. How do you prevent duplicate message processing?
+[23/1500] Already complete: RabbitMQ and Messaging 5. When would you choose RabbitMQ over direct API calls?
+[24/1500] Already complete: RabbitMQ and Messaging 6. How would you debug a message that was published but not consumed?
+[25/1500] Already complete: SQL Server and Data Access 1. How do you optimize a slow SQL query?
+[26/1500] Already complete: SQL Server and Data Access 2. Explain clustered and non-clustered indexes.
+[27/1500] Already complete: SQL Server and Data Access 3. How do indexes improve reads but affect writes?
+[28/1500] Completed: SQL Server and Data Access 4. How do you read an execution plan?
+[29/1500] Completed: SQL Server and Data Access 5. When would you use Entity Framework, and when would you use Dapper?
+[30/1500] Completed: SQL Server and Data Access 6. How do you avoid the N+1 query problem in EF?
+[31/1500] Completed: React, Angular, and Frontend 1. How do React and Angular differ architecturally?
+[32/1500] Completed: React, Angular, and Frontend 2. What are React hooks, and how do you avoid common hook mistakes?
+[33/1500] Completed: React, Angular, and Frontend 3. How do you manage API loading, error, and empty states in React?
+[34/1500] Completed: React, Angular, and Frontend 4. What does TypeScript add to JavaScript development?
+[35/1500] Completed: React, Angular, and Frontend 5. How do Angular services and dependency injection work?
+[36/1500] Completed: React, Angular, and Frontend 6. How do you keep frontend and backend contracts aligned?
+[37/1500] Completed: Testing and Quality 1. What makes a good unit test?
+[38/1500] Completed: Testing and Quality 2. What should be mocked, and what should not be mocked?
+[39/1500] Completed: Testing and Quality 3. How do you use MOQ to test a service with dependencies?
+[40/1500] Completed: Testing and Quality 4. How do you test async methods and exception paths?
+[41/1500] Completed: Testing and Quality 5. What tests would you write for a payment or transaction workflow?
+[42/1500] Completed: Testing and Quality 6. How do you handle flaky tests?
+[43/1500] Completed: Leadership and AI-Assisted Engineering 1. What do you look for in code reviews?
+[44/1500] Completed: Leadership and AI-Assisted Engineering 2. How do you mentor junior developers?
+[45/1500] Completed: Leadership and AI-Assisted Engineering 3. How do you handle delivery pressure without reducing quality?
+[46/1500] Completed: Leadership and AI-Assisted Engineering 4. How have you used Claude Code or GitHub Copilot in real development?
+[47/1500] Completed: Leadership and AI-Assisted Engineering 5. How do you verify AI-generated code before it reaches production?
+[48/1500] Completed: Leadership and AI-Assisted Engineering 6. How would you introduce AI-first development practices to a team?
+[49/1500] Completed: .NET Framework to Modern .NET 1. What is the difference between .NET Framework and modern .NET?
+[50/1500] Completed: .NET Framework to Modern .NET 2. What are the major architectural differences between .NET Framework 4.x and modern .NET?
+[51/1500] Completed: .NET Framework to Modern .NET 3. How would you migrate a .NET Framework 4 application to modern .NET?
+[52/1500] Completed: .NET Framework to Modern .NET 4. Would you rewrite the entire application? Why or why not?
+[53/1500] Completed: .NET Framework to Modern .NET 5. Why would you avoid a big-bang rewrite?
+[54/1500] Completed: .NET Framework to Modern .NET 6. How do you assess a legacy .NET application before modernising it?
+[55/1500] Completed: .NET Framework to Modern .NET 7. How do you identify dependencies in a legacy application?
+[56/1500] Completed: .NET Framework to Modern .NET 8. How do you handle libraries that are not compatible with modern .NET?
+[57/1500] Completed: .NET Framework to Modern .NET 9. How would you migrate web.config configuration?
+[58/1500] Completed: .NET Framework to Modern .NET 10. How is dependency injection different in modern ASP.NET Core?
+[59/1500] Completed: .NET Framework to Modern .NET 11. How is the ASP.NET Core request pipeline different from classic ASP.NET?
+[60/1500] Completed: .NET Framework to Modern .NET 12. What is middleware, and how does middleware ordering work?
+[61/1500] Completed: .NET Framework to Modern .NET 13. What problems can incorrect middleware ordering cause?
+[62/1500] Completed: .NET Framework to Modern .NET 14. How would you migrate authentication from a legacy application?
+[63/1500] Completed: .NET Framework to Modern .NET 15. How do you migrate Entity Framework to EF Core?
+[64/1500] Completed: .NET Framework to Modern .NET 16. What compatibility problems have you faced during .NET migration?
+[65/1500] Completed: .NET Framework to Modern .NET 17. How would you test a migrated component?
+[66/1500] Completed: .NET Framework to Modern .NET 18. How do you run legacy and modern .NET components side by side?
+[67/1500] Completed: .NET Framework to Modern .NET 19. How do you measure modernisation progress?
+[68/1500] Completed: .NET Framework to Modern .NET 20. When should a legacy component not be modernised?
+[69/1500] Completed: .NET Framework to Modern .NET 21. How do you prioritise components for migration?
+[70/1500] Completed: .NET Framework to Modern .NET 22. How do you maintain feature delivery during modernisation?
+[71/1500] Completed: .NET Framework to Modern .NET 23. How would you manage rollback during migration?
+[72/1500] Completed: .NET Framework to Modern .NET 24. What does incremental modernisation mean to you?
+[73/1500] Completed: Strangler Fig and Migration Patterns 1. What is the Strangler Fig pattern?
+[74/1500] Completed: Strangler Fig and Migration Patterns 2. When would you use the Strangler Fig pattern?
+[75/1500] Completed: Strangler Fig and Migration Patterns 3. When would you not use the Strangler Fig pattern?
+[76/1500] Completed: Strangler Fig and Migration Patterns 4. How do you route traffic between legacy and modern components?
+[77/1500] Completed: Strangler Fig and Migration Patterns 5. How do you gradually retire legacy functionality?
+[78/1500] Completed: Strangler Fig and Migration Patterns 6. What is an anti-corruption layer?
+[79/1500] Completed: Strangler Fig and Migration Patterns 7. Why do we need an anti-corruption layer?
+[80/1500] Completed: Strangler Fig and Migration Patterns 8. Where would you place an anti-corruption layer?
+[81/1500] Completed: Strangler Fig and Migration Patterns 9. How do you prevent a legacy domain model leaking into a new system?
+[82/1500] Completed: Strangler Fig and Migration Patterns 10. What is incremental migration?
+[83/1500] Completed: Strangler Fig and Migration Patterns 11. Compare Strangler Fig with a big-bang rewrite.
+[84/1500] Completed: Strangler Fig and Migration Patterns 12. How do you handle shared databases during migration?
+[85/1500] Completed: Strangler Fig and Migration Patterns 13. Would the legacy and modern applications share the same database?
+[86/1500] Completed: Strangler Fig and Migration Patterns 14. What problems can a shared database create?
+[87/1500] Completed: Strangler Fig and Migration Patterns 15. How would you separate data ownership incrementally?
+[88/1500] Completed: Strangler Fig and Migration Patterns 16. How do you handle transactions across old and new components?
+[89/1500] Completed: Strangler Fig and Migration Patterns 17. How do you migrate without downtime?
+[90/1500] Completed: Strangler Fig and Migration Patterns 18. How would you validate that the new component behaves like the legacy component?
+[91/1500] Completed: Strangler Fig and Migration Patterns 19. What is parallel running?
+[92/1500] Completed: Strangler Fig and Migration Patterns 20. What is shadow traffic?
+[93/1500] Completed: Strangler Fig and Migration Patterns 21. How would you roll back to the legacy implementation?
+[94/1500] Completed: Architecture and Design 1. How do you define application architecture?
+[95/1500] Completed: Architecture and Design 2. What makes an architecture good?
+[96/1500] Completed: Architecture and Design 3. How do you balance architecture and delivery speed?
+[97/1500] Completed: Architecture and Design 4. How do you avoid overengineering?
+[98/1500] Completed: Architecture and Design 5. Modular monolith versus microservices: when would you choose each?
+[99/1500] Completed: Architecture and Design 6. When should you use microservices?
+[100/1500] Completed: Architecture and Design 7. When should you avoid microservices?
+[101/1500] Completed: Architecture and Design 8. How do you identify service boundaries?
+[102/1500] Completed: Architecture and Design 9. What is a bounded context?
+[103/1500] Completed: Architecture and Design 10. Explain Domain-Driven Design.
+[104/1500] Completed: Architecture and Design 11. What is an aggregate?
+[105/1500] Completed: Architecture and Design 12. What is an aggregate root?
+[106/1500] Completed: Architecture and Design 13. What is a domain event?
+[107/1500] Completed: Architecture and Design 14. Domain event versus integration event?
+[108/1500] Completed: Architecture and Design 15. Explain Clean Architecture.
+[109/1500] Completed: Architecture and Design 16. What are the layers in Clean Architecture?
+[110/1500] Completed: Architecture and Design 17. Where should business logic live?
+[111/1500] Completed: Architecture and Design 18. Should the domain layer reference Entity Framework?
+[112/1500] Completed: Architecture and Design 19. Should the controller directly call the repository?
+[113/1500] Completed: Architecture and Design 20. What is dependency inversion?
+[114/1500] Completed: Architecture and Design 21. Explain SOLID with practical examples.
+[115/1500] Completed: Architecture and Design 22. Give a real example of the Single Responsibility Principle.
+[116/1500] Completed: Architecture and Design 23. What is tight coupling, and how do you reduce it?
+[117/1500] Completed: Architecture and Design 24. What is cohesion?
+[118/1500] Completed: Architecture and Design 25. How do you make architecture decisions?
+[119/1500] Completed: Architecture and Design 26. How do you document architecture decisions?
+[120/1500] Completed: Architecture and Design 27. What is an ADR?
+[121/1500] Completed: Architecture and Design 28. How do you ensure developers follow architecture standards?
+[122/1500] Completed: Architecture and Design 29. What happens when you disagree with a Solution Architect?
+[123/1500] Completed: Architecture and Design 30. How do you review an architecture?
+[124/1500] Completed: Architecture and Design 31. What quality attributes do you consider?
+[125/1500] Completed: Architecture and Design 32. How do you design for scalability?
+[126/1500] Completed: Architecture and Design 33. How do you design for maintainability?
+[127/1500] Completed: Architecture and Design 34. How do you design for resilience?
+[128/1500] Completed: Architecture and Design 35. How do you design for observability?
+[129/1500] Completed: API Design and Integration Governance 1. How do you design a REST API?
+[130/1500] Completed: API Design and Integration Governance 2. What makes a good REST API?
+[131/1500] Completed: API Design and Integration Governance 3. How do you name API resources?
+[132/1500] Completed: API Design and Integration Governance 4. GET versus POST?
+[133/1500] Completed: API Design and Integration Governance 5. PUT versus PATCH?
+[134/1500] Completed: API Design and Integration Governance 6. Is PUT idempotent?
+[135/1500] Completed: API Design and Integration Governance 7. Is POST idempotent?
+[136/1500] Completed: API Design and Integration Governance 8. How do you make a POST request idempotent?
+[137/1500] Completed: API Design and Integration Governance 9. What is an idempotency key?
+[138/1500] Completed: API Design and Integration Governance 10. Where would you store an idempotency key?
+[139/1500] Completed: API Design and Integration Governance 11. How do you handle duplicate API requests?
+[140/1500] Completed: API Design and Integration Governance 12. How do you version an API?
+[141/1500] Completed: API Design and Integration Governance 13. URL versioning versus header versioning?
+[142/1500] Completed: API Design and Integration Governance 14. How do you introduce a breaking API change?
+[143/1500] Completed: API Design and Integration Governance 15. How do you maintain backward compatibility?
+[144/1500] Completed: API Design and Integration Governance 16. How long do you support an old API version?
+[145/1500] Completed: API Design and Integration Governance 17. How do you deprecate an API?
+[146/1500] Completed: API Design and Integration Governance 18. How do frontend and backend teams agree on an API contract?
+[147/1500] Completed: API Design and Integration Governance 19. What is contract-first API development?
+[148/1500] Completed: API Design and Integration Governance 20. What is OpenAPI?
+[149/1500] Completed: API Design and Integration Governance 21. How do you validate API contracts?
+[150/1500] Completed: API Design and Integration Governance 22. What is consumer-driven contract testing?
+[151/1500] Completed: API Design and Integration Governance 23. What is Pact testing?
+[152/1500] Completed: API Design and Integration Governance 24. How do you design consistent API errors?
+[153/1500] Completed: API Design and Integration Governance 25. What is ProblemDetails?
+[154/1500] Completed: API Design and Integration Governance 26. How do you implement global exception handling?
+[155/1500] Completed: API Design and Integration Governance 27. Where should validation happen?
+[156/1500] Completed: API Design and Integration Governance 28. How do you handle pagination?
+[157/1500] Completed: API Design and Integration Governance 29. Offset versus cursor pagination?
+[158/1500] Completed: API Design and Integration Governance 30. How do you handle filtering and sorting?
