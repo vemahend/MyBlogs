@@ -5,6 +5,13 @@ const search = document.querySelector('#searchInput');
 const folderSearch = document.querySelector('#folderSearch');
 const folderFilters = document.querySelector('#folderFilters');
 const resultCount = document.querySelector('#resultCount');
+const libraryViewButton = document.querySelector('#libraryViewButton');
+const kanbanViewButton = document.querySelector('#kanbanViewButton');
+const kanbanPanel = document.querySelector('#kanbanPanel');
+const kanbanBoard = document.querySelector('#kanbanBoard');
+const questionBankSelect = document.querySelector('#questionBankSelect');
+const kanbanProgress = document.querySelector('#kanbanProgress');
+const resetKanban = document.querySelector('#resetKanban');
 const dialog = document.querySelector('#readerDialog');
 const content = document.querySelector('#articleContent');
 const toc = document.querySelector('#tableOfContents');
@@ -12,6 +19,9 @@ const toast = document.querySelector('#toast');
 let activeCategory = 'All';
 let activeFolder = 'All';
 let articles = [];
+let questionBanks = [];
+let activeView = 'library';
+let draggedQuestionKey = '';
 
 if (window.marked) marked.setOptions({ gfm: true, breaks: false });
 const encodePath = value => value.split('/').map(encodeURIComponent).join('/');
@@ -73,6 +83,7 @@ async function loadLibrary() {
   renderFolderOptions();
   render();
   updateStats();
+  initializeKanban();
   const requested = new URLSearchParams(location.search).get('article');
   const requestedArticle = articles.find(article => article.path === requested);
   if (requestedArticle) openArticle(requestedArticle);
@@ -187,7 +198,7 @@ document.querySelector('#copyLink').onclick = async () => {
   await navigator.clipboard.writeText(location.href);
   notify('Article link copied');
 };
-search.oninput = render;
+search.oninput = () => activeView === 'kanban' ? renderKanban() : render();
 folderSearch.oninput = renderFolderOptions;
 document.addEventListener('keydown', event => {
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
@@ -197,4 +208,126 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && dialog.open) closeReader();
 });
 dialog.addEventListener('cancel', event => { event.preventDefault(); closeReader(); });
+
+const kanbanStatuses = [
+  { key: 'not-started', label: 'Not Started' },
+  { key: 'learning', label: 'Learning' },
+  { key: 'needs-revision', label: 'Needs Revision' },
+  { key: 'confident', label: 'Confident' }
+];
+const kanbanStorageKey = 'dev-notes-kanban-v1';
+
+function loadKanbanState() {
+  try { return JSON.parse(localStorage.getItem(kanbanStorageKey)) || {}; }
+  catch { return {}; }
+}
+
+function saveKanbanState(state) {
+  localStorage.setItem(kanbanStorageKey, JSON.stringify(state));
+}
+
+function parseQuestionBank(article) {
+  let section = 'General';
+  const questions = [];
+  article.text.split(/\r?\n/).forEach((line, lineIndex) => {
+    const sectionMatch = line.match(/^#{2,6}\s+(.+?)\s*$/);
+    if (sectionMatch) { section = sectionMatch[1]; return; }
+    const questionMatch = line.match(/^\s*(\d+)[.)]\s+(.+?)\s*$/);
+    if (!questionMatch) return;
+    questions.push({
+      number: questionMatch[1],
+      title: questionMatch[2],
+      section,
+      key: `${article.path}::${section}::${questionMatch[1]}::${lineIndex}`
+    });
+  });
+  return { article, questions };
+}
+
+function initializeKanban() {
+  questionBanks = articles
+    .filter(article => article.path.split('/').pop().toLowerCase() === 'interview_questions.md')
+    .map(parseQuestionBank)
+    .filter(bank => bank.questions.length);
+  questionBankSelect.innerHTML = questionBanks.map((bank, index) => `<option value="${index}">${bank.article.title} — ${folderLabel(bank.article.folder)} (${bank.questions.length})</option>`).join('');
+  if (!questionBanks.length) kanbanViewButton.disabled = true;
+}
+
+function selectedBank() {
+  return questionBanks[Number(questionBankSelect.value || 0)];
+}
+
+function moveQuestion(key, status) {
+  const state = loadKanbanState();
+  state[key] = status;
+  saveKanbanState(state);
+  renderKanban();
+}
+
+function questionCard(question, status) {
+  const card = document.createElement('article');
+  card.className = 'question-card';
+  card.draggable = true;
+  card.dataset.key = question.key;
+  card.innerHTML = `<span class="question-topic">${question.section}</span><h4>${question.title}</h4><div class="question-card-footer"><span>Question ${question.number}</span><select aria-label="Revision status">${kanbanStatuses.map(item => `<option value="${item.key}" ${item.key === status ? 'selected' : ''}>${item.label}</option>`).join('')}</select></div>`;
+  card.addEventListener('dragstart', () => { draggedQuestionKey = question.key; });
+  card.querySelector('select').addEventListener('change', event => moveQuestion(question.key, event.target.value));
+  return card;
+}
+
+function renderKanban() {
+  const bank = selectedBank();
+  if (!bank) { kanbanBoard.innerHTML = '<p>No question-bank Markdown file was found.</p>'; return; }
+  const state = loadKanbanState();
+  const query = search.value.trim().toLowerCase();
+  const matchingQuestions = bank.questions.filter(question => !query || `${question.title} ${question.section}`.toLowerCase().includes(query));
+  kanbanBoard.innerHTML = '';
+  kanbanStatuses.forEach(status => {
+    const questions = matchingQuestions.filter(question => (state[question.key] || 'not-started') === status.key);
+    const column = document.createElement('section');
+    column.className = 'kanban-column';
+    column.dataset.status = status.key;
+    column.innerHTML = `<header class="kanban-column-head"><h3>${status.label}</h3><span>${questions.length}</span></header><div class="kanban-list"></div>`;
+    const list = column.querySelector('.kanban-list');
+    questions.forEach(question => list.append(questionCard(question, status.key)));
+    if (!questions.length) list.innerHTML = '<div class="kanban-empty">No questions here</div>';
+    column.addEventListener('dragover', event => { event.preventDefault(); column.classList.add('drag-over'); });
+    column.addEventListener('dragleave', () => column.classList.remove('drag-over'));
+    column.addEventListener('drop', event => {
+      event.preventDefault();
+      column.classList.remove('drag-over');
+      if (draggedQuestionKey) moveQuestion(draggedQuestionKey, status.key);
+      draggedQuestionKey = '';
+    });
+    kanbanBoard.append(column);
+  });
+  const completed = bank.questions.filter(question => (state[question.key] || 'not-started') === 'confident').length;
+  kanbanProgress.textContent = `${completed} / ${bank.questions.length} confident`;
+  resultCount.textContent = `${matchingQuestions.length.toLocaleString()} questions shown`;
+}
+
+function setView(view) {
+  activeView = view;
+  const isKanban = view === 'kanban';
+  document.querySelector('.library').classList.toggle('kanban-mode', isKanban);
+  kanbanPanel.hidden = !isKanban;
+  document.querySelector('#emptyState').hidden = true;
+  libraryViewButton.classList.toggle('active', !isKanban);
+  kanbanViewButton.classList.toggle('active', isKanban);
+  document.querySelector('#libraryTitle').textContent = isKanban ? 'Revision board' : 'All notes';
+  search.placeholder = isKanban ? 'Search questions or topics…' : 'Search titles, topics, or content…';
+  if (isKanban) renderKanban(); else render();
+}
+
+libraryViewButton.onclick = () => setView('library');
+kanbanViewButton.onclick = () => setView('kanban');
+questionBankSelect.onchange = renderKanban;
+resetKanban.onclick = () => {
+  const bank = selectedBank();
+  if (!bank || !confirm('Reset revision status for every question in this bank?')) return;
+  const state = loadKanbanState();
+  bank.questions.forEach(question => delete state[question.key]);
+  saveKanbanState(state);
+  renderKanban();
+};
 loadLibrary();

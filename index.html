@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="reader-typography.css">
   <link rel="stylesheet" href="card-motion.css">
   <link rel="stylesheet" href="folder-navigation.css">
+  <link rel="stylesheet" href="kanban-board.css">
 </head>
 <body>
   <header class="site-header">
@@ -36,8 +37,12 @@
 
     <section class="library" id="library">
       <div class="library-head">
-        <div><p class="eyebrow">Browse the collection</p><h2>All notes</h2></div>
+        <div><p class="eyebrow">Browse the collection</p><h2 id="libraryTitle">All notes</h2></div>
         <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search titles, topics, or content…" autocomplete="off"><kbd>⌘ K</kbd></label>
+      </div>
+      <div class="view-switch" role="group" aria-label="Library view">
+        <button class="active" id="libraryViewButton">Article library</button>
+        <button id="kanbanViewButton">Revision board</button>
       </div>
       <div class="filter-row" id="filters"></div>
       <div class="folder-tools">
@@ -47,6 +52,15 @@
       </div>
       <div class="folder-filter-row" id="folderFilters" aria-label="Technology folder filters"></div>
       <div class="article-grid" id="articleGrid" aria-live="polite"></div>
+      <section class="kanban-panel" id="kanbanPanel" hidden>
+        <div class="kanban-toolbar">
+          <label for="questionBankSelect">Question bank</label>
+          <select id="questionBankSelect"></select>
+          <strong id="kanbanProgress"></strong>
+          <button id="resetKanban" type="button">Reset this board</button>
+        </div>
+        <div class="kanban-board" id="kanbanBoard" aria-live="polite"></div>
+      </section>
       <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No notes found</h3><p>Try another search or choose a different topic.</p></div>
     </section>
   </main>
@@ -69,7 +83,7 @@
 
   <div class="toast" id="toast" role="status"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="library-files.js?v=1787739826481"></script>
+  <script src="library-files.js?v=1787740782014"></script>
   <script src="reader.js"></script>
 </body>
 </html>
