@@ -356,3 +356,271 @@ Questions only. Answers will be prepared separately.
 15. Design observability that traces a user request through gateway, API, database, broker, and consumer.
 16. Explain how you would secure, test, deploy, monitor, and roll back the complete platform.
 
+## C# and .NET Engineering Deep Dive
+
+1. What happens from compiling a C# application to executing it in the .NET runtime?
+2. Explain the CLR, IL, JIT compilation, and tiered compilation.
+3. What is the difference between value types and reference types?
+4. How do stack allocation, heap allocation, boxing, and unboxing affect performance?
+5. How does the .NET garbage collector work across generations?
+6. What is the Large Object Heap, and how can it affect application performance?
+7. When should a type implement `IDisposable` or `IAsyncDisposable`?
+8. Explain delegates, events, lambdas, and expression trees.
+9. How do `IEnumerable<T>`, `IAsyncEnumerable<T>`, and `IQueryable<T>` differ?
+10. What is deferred execution, and when can repeated enumeration cause bugs?
+11. How do records, classes, structs, and readonly structs differ?
+12. How do nullable reference types improve design without providing runtime enforcement?
+13. How do generics improve type safety and performance?
+14. What are covariance and contravariance in C#?
+15. How do `Task`, `ValueTask`, and `Thread` differ?
+16. When is `Task.Run` appropriate in an ASP.NET Core application?
+17. How do race conditions occur, and how do `lock`, `SemaphoreSlim`, and immutable data help?
+18. What is thread-pool starvation, and how would you diagnose it?
+19. How do channels support producer-consumer workloads in .NET?
+20. Which runtime, allocation, exception, and thread-pool metrics would you monitor?
+
+## ASP.NET Core Application Design
+
+1. Explain the ASP.NET Core request pipeline from connection acceptance to response completion.
+2. How does middleware ordering affect routing, authentication, authorization, CORS, and exception handling?
+3. Compare middleware, endpoint filters, MVC filters, and action filters.
+4. Compare controllers and minimal APIs for different application types.
+5. How does model binding work, and which security risks should you consider?
+6. How should an API handle graceful shutdown and requests already in progress?
+7. How do Kestrel, a reverse proxy, and forwarded headers work together?
+8. How do output caching, response caching, and distributed caching differ?
+9. How do you stream large responses without excessive memory allocation?
+10. How do you safely accept and process file uploads?
+11. Why should durable background work not depend only on an in-process queue?
+12. How do you implement health checks that reflect readiness without overloading dependencies?
+13. How do you prevent controllers or endpoints from accumulating business logic?
+14. How do you configure secure headers, HTTPS redirection, HSTS, and proxy trust?
+15. How do you protect ASP.NET Core Data Protection keys in containers?
+
+## REST, OpenAPI, and Swagger Governance
+
+1. What constraints define REST, and which are commonly applied pragmatically?
+2. How do you model resources rather than database tables in a REST API?
+3. How do safe, idempotent, and cacheable HTTP methods differ?
+4. How do you model long-running operations in an HTTP API?
+5. When should an API return `202 Accepted`, and how should clients track progress?
+6. How do ETags and conditional requests prevent lost updates?
+7. How do `If-Match` and `If-None-Match` differ?
+8. How should APIs represent validation errors using Problem Details?
+9. How do you design consistent error types without leaking internal details?
+10. What is OpenAPI, and how does it differ from Swagger tooling?
+11. What belongs in an OpenAPI operation definition?
+12. How do reusable schemas, parameters, responses, and security schemes work?
+13. How do you document OAuth 2.0 flows in an OpenAPI definition?
+14. How do you describe polymorphism using `oneOf`, `anyOf`, and discriminators?
+15. How do you prevent implementation details from leaking into generated schemas?
+16. How do you generate and distribute typed clients safely?
+17. How do you lint and validate an OpenAPI document in CI?
+18. How do you detect backward-incompatible API changes automatically?
+19. How do contract-first and code-first API development differ?
+20. How do you secure Swagger UI outside development environments?
+21. How do you publish OpenAPI definitions into Azure API Management?
+22. How would you establish organization-wide REST and OpenAPI standards?
+
+## GraphQL Fundamentals and Schema Design
+
+1. What problem does GraphQL solve compared with REST?
+2. When is GraphQL a poor choice?
+3. Explain schemas, object types, fields, arguments, queries, mutations, and subscriptions.
+4. How do nullability and list nullability work in a GraphQL schema?
+5. How do interfaces and unions model polymorphic results?
+6. Why should a GraphQL schema model the domain instead of exposing database entities?
+7. How do input types differ from output types?
+8. How should mutations express validation errors and business conflicts?
+9. How do cursor-based connections support pagination?
+10. Why is offset pagination problematic for frequently changing datasets?
+11. How do filtering and sorting capabilities create performance or security risks?
+12. How do you evolve a GraphQL schema without explicit URL versions?
+13. How do field deprecation and schema usage analytics support safe evolution?
+14. How do persisted queries work, and what benefits do they provide?
+15. What are automatic persisted queries?
+16. How do fragments, aliases, and variables improve client queries?
+17. How do subscriptions differ operationally from queries and mutations?
+18. How should GraphQL errors distinguish validation, authorization, and server failures?
+
+## GraphQL with Hot Chocolate, GraphQL.NET, and Apollo
+
+1. Compare Hot Chocolate and GraphQL.NET for an ASP.NET Core service.
+2. How do code-first, annotation-based, and schema-first approaches differ in Hot Chocolate?
+3. How do query resolvers and field middleware work in Hot Chocolate?
+4. How do DataLoader and batching prevent N+1 database queries?
+5. Why can a DataLoader still perform poorly when scoped incorrectly?
+6. How do projections, filtering, and sorting integrate with EF Core in Hot Chocolate?
+7. What risks arise from exposing unrestricted filtering over EF Core?
+8. How do you propagate `CancellationToken` through GraphQL resolvers?
+9. How do you prevent resolvers from containing business logic?
+10. How do you apply dependency injection with resolver lifetimes safely?
+11. How do you implement mutations using CQRS commands?
+12. How do you map domain failures into useful GraphQL errors?
+13. How do you avoid exposing exception messages and stack traces?
+14. How do you implement authentication and authorization at type and field level?
+15. How do Entra ID access tokens secure a GraphQL endpoint?
+16. How do you apply tenant isolation consistently across every resolver?
+17. How do query depth, complexity, timeouts, and execution limits protect the server?
+18. How do you prevent aliases and repeated fields from bypassing naive complexity limits?
+19. How do you rate-limit GraphQL when every operation uses the same HTTP endpoint?
+20. How do you cache GraphQL responses or field results safely?
+21. How do you monitor resolver latency and identify expensive fields?
+22. How do you trace GraphQL operations with OpenTelemetry?
+23. How do you test a Hot Chocolate schema, resolvers, authorization, and errors?
+24. How do schema snapshots detect breaking changes?
+25. How do Apollo Client cache normalization and type policies work?
+26. How do Apollo Client fetch policies affect freshness and performance?
+27. How do optimistic UI updates work, and how do you recover when a mutation fails?
+28. How do you handle token expiry in Apollo links without creating retry loops?
+29. How do Apollo Federation and schema stitching differ?
+30. When should multiple teams adopt federation rather than one GraphQL gateway?
+31. How do ownership and composition checks work in a federated graph?
+32. How would you expose GraphQL through Azure API Management?
+33. Which protections belong in APIM and which must remain in the GraphQL server?
+34. Design a transaction-history query that avoids N+1 queries and unbounded results.
+
+## Cloud Design Principles for Modern Applications
+
+1. What does cloud native mean beyond running an application in the cloud?
+2. How do stateless services support elasticity and resilience?
+3. How do availability, reliability, scalability, and performance differ?
+4. How do horizontal and vertical scaling differ?
+5. How do you remove single points of failure from an application architecture?
+6. How do availability zones and regions affect design?
+7. How do you choose between synchronous and asynchronous integration?
+8. How do you design for transient faults without creating retry storms?
+9. How do bulkheads, backpressure, load shedding, and admission control differ?
+10. How do RTO and RPO influence architecture and recovery design?
+11. How do you design for graceful degradation when a dependency fails?
+12. How do twelve-factor application principles apply to modern .NET services?
+13. How do immutable infrastructure and disposable compute affect deployment?
+14. How do you select managed services versus self-hosted infrastructure?
+15. How do cost, portability, operational skill, and vendor lock-in affect cloud decisions?
+16. How do zero-trust principles affect network and identity design?
+17. How do you validate architecture assumptions with load, failure, and recovery tests?
+
+## Azure and AWS Platform Comparisons
+
+1. How do Microsoft Entra ID and AWS IAM differ conceptually?
+2. Compare Azure Managed Identity with AWS IAM roles for workloads.
+3. Compare Azure Container Apps with AWS App Runner and Amazon ECS Fargate.
+4. Compare AKS with Amazon EKS.
+5. Compare Azure API Management with Amazon API Gateway.
+6. Compare Azure Application Gateway and Front Door with AWS ALB and CloudFront.
+7. Compare Azure Key Vault with AWS Secrets Manager and KMS.
+8. Compare Azure Service Bus and Event Grid with Amazon SQS, SNS, and EventBridge.
+9. Compare Azure Monitor and Application Insights with CloudWatch and X-Ray.
+10. Compare Azure SQL and Cosmos DB with Amazon RDS and DynamoDB.
+11. How do networking and private connectivity concepts map between Azure and AWS?
+12. How would you design portability without reducing the system to the lowest common denominator?
+13. When is a multicloud design justified, and when is it unnecessary complexity?
+14. How would you migrate a containerized .NET workload between AWS and Azure?
+
+## Docker and Kubernetes Delivery Deep Dive
+
+1. How do image layers and the build cache affect Docker build speed and image size?
+2. Why are multi-stage Docker builds useful for .NET applications?
+3. How do you pin and update base images safely?
+4. What is the difference between `ENTRYPOINT` and `CMD`?
+5. How do Linux signals reach a .NET process inside a container?
+6. How do you ensure graceful termination before Kubernetes sends SIGKILL?
+7. Why should application state not live only in a container filesystem?
+8. How do ConfigMaps and Secrets differ, and what are their security limitations?
+9. How do deployments, StatefulSets, DaemonSets, Jobs, and CronJobs differ?
+10. How do namespaces and RBAC support workload isolation?
+11. How do pod anti-affinity and topology-spread constraints improve resilience?
+12. How do disruption budgets interact with cluster upgrades and autoscaling?
+13. How do you debug DNS, networking, and service-discovery failures in Kubernetes?
+14. How do Helm and Kustomize differ?
+15. How do you manage container provenance and software bills of materials?
+16. How do you enforce trusted images, non-root users, and resource limits?
+
+## CI/CD and DevOps Ways of Working
+
+1. What does DevOps mean beyond using a deployment pipeline?
+2. How do continuous integration, continuous delivery, and continuous deployment differ?
+3. What should happen on every pull request?
+4. How do trunk-based development and GitFlow differ?
+5. What makes a deployment pipeline fast, reliable, and repeatable?
+6. How do you separate build, test, package, release, and deploy stages?
+7. How do artifacts and provenance support traceability?
+8. How do you integrate SAST, dependency, secret, and container scanning?
+9. How do you prevent a pull request from accessing production credentials?
+10. How do deployment rings reduce release risk?
+11. How do feature flags differ from configuration and deployment toggles?
+12. How do you perform an emergency hotfix without bypassing essential controls?
+13. How do DORA metrics help improve software delivery?
+14. Why can deployment frequency and change-failure rate improve together?
+15. How do blameless retrospectives turn incidents into delivery improvements?
+
+## Git and Modern Software Delivery
+
+1. Explain commits, branches, tags, remotes, and the Git object model.
+2. How do merge and rebase differ?
+3. When is interactive rebase appropriate, and when is it dangerous?
+4. How do you recover a lost commit using reflog?
+5. How do `revert`, `reset`, and `restore` differ?
+6. How do you resolve a difficult merge conflict safely?
+7. Why should commits be small, cohesive, and independently understandable?
+8. What makes a pull request easy to review?
+9. How do branch-protection rules improve delivery safety?
+10. How do signed commits and protected tags improve supply-chain security?
+11. What should you do if a credential is committed and pushed?
+12. How do monorepo and multirepo strategies affect ownership and CI performance?
+13. How do CODEOWNERS and review policies support cross-functional teams?
+14. How do you keep long-running work integrated without a long-lived branch?
+15. How do you audit which source and pipeline produced a deployment?
+
+## Observability, Logging, and Monitoring Deep Dive
+
+1. What makes a log event structured rather than formatted text?
+2. Which fields should every production log contain?
+3. How do log levels differ, and how do you prevent excessive debug logging?
+4. How do high-cardinality dimensions affect metrics cost and performance?
+5. What are counters, gauges, histograms, and exemplars?
+6. How do RED and USE monitoring methods differ?
+7. How do traces, spans, baggage, and span links work?
+8. When should asynchronous messaging use a span link instead of a parent-child span?
+9. How do you instrument ASP.NET Core, EF Core, HttpClient, and GraphQL resolvers?
+10. How do sampling strategies affect cost and incident diagnosis?
+11. How do you retain errors and slow traces while sampling routine traffic?
+12. How do symptom-based alerts differ from cause-based alerts?
+13. How do you monitor deployment health against a baseline?
+14. How do you investigate a memory leak in a containerized .NET service?
+15. How do you control telemetry cost without losing diagnostic evidence?
+
+## Agile and Cross-Functional Delivery
+
+1. What does effective Agile delivery look like beyond ceremonies?
+2. How do you refine an ambiguous story with product, design, and testing colleagues?
+3. How do you split a large feature into thin, valuable increments?
+4. How do you identify dependencies and integration risks during planning?
+5. How do you estimate work while technical uncertainty remains?
+6. How do spikes reduce uncertainty without becoming production shortcuts?
+7. How do definitions of ready and done improve cross-functional delivery?
+8. How do developers, testers, designers, and product owners collaborate before coding?
+9. How do you handle changing requirements late in an iteration?
+10. How do you surface delivery risk without sounding obstructive?
+11. How do you balance sprint commitments, incidents, and technical debt?
+12. How do you prevent handoffs from creating queues between disciplines?
+13. How do you use retrospectives to produce measurable improvement?
+14. How do you support psychological safety while maintaining high standards?
+15. Tell me about a cross-functional delivery that did not go to plan.
+
+## Stakeholder Communication
+
+1. How do you explain OAuth 2.0 or zero trust to a non-technical stakeholder?
+2. How do you explain eventual consistency and delayed updates to a product owner?
+3. How do you present architecture options without overwhelming the audience?
+4. How do you communicate the cost and benefit of CQRS or event sourcing?
+5. How do you explain why a possible deadline carries unacceptable risk?
+6. How do you turn technical metrics into customer or business impact?
+7. How do you communicate during an incident before the root cause is known?
+8. How do you provide status without hiding uncertainty?
+9. How do you challenge a stakeholder request constructively?
+10. How do you negotiate scope while protecting security and reliability?
+11. How do you tailor one proposal for engineers, executives, security, and operations?
+12. How do you respond when stakeholders reject your technical recommendation?
+13. How do you demonstrate progress on foundational work with little visible UI?
+14. Tell me about a time communication prevented a technical or delivery failure.
