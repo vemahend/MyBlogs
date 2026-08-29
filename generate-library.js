@@ -6,9 +6,14 @@ const path = require('path');
 const root = __dirname;
 const ignoredDirectories = new Set(['.git', 'node_modules']);
 
+function isHiddenFromLibrary(directoryName) {
+  return directoryName.toLowerCase().includes('hide');
+}
+
 function findMarkdownFiles(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
     if (entry.name.startsWith('.') || ignoredDirectories.has(entry.name)) return [];
+    if (entry.isDirectory() && isHiddenFromLibrary(entry.name)) return [];
     const fullPath = path.join(directory, entry.name);
     if (entry.isDirectory()) return findMarkdownFiles(fullPath);
     if (!entry.isFile() || !entry.name.toLowerCase().endsWith('.md')) return [];
