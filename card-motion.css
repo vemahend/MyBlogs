@@ -1,11 +1,13 @@
-/* Animated article-card visuals */
-.article-card{min-height:390px;padding:0}
-.card-gif{height:145px;position:relative;overflow:hidden;background:var(--green2);isolation:isolate;flex:none}
-.card-gif img{width:115%;height:115%;object-fit:cover;object-position:50% 50%;position:absolute;inset:-7.5%;animation:card-drift 8s ease-in-out infinite alternate;animation-delay:var(--motion-delay,0s);transition:filter .35s}
-.card-gif:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 20%,#fff7 42%,transparent 62%);transform:translateX(-120%);animation:card-glint 5.5s ease-in-out infinite;animation-delay:var(--motion-delay,0s);mix-blend-mode:soft-light}
+/* Compact technology visual for article cards. */
+.article-card{min-height:330px;padding:0}
+.card-visual{height:86px;position:relative;display:flex;align-items:center;overflow:hidden;padding:0 24px;background:linear-gradient(115deg,#102633,#075b63 58%,#00a968);isolation:isolate;flex:none}
+.card-visual:before{content:"";position:absolute;width:150px;height:150px;right:-32px;top:-64px;border:1px solid #7effdc44;border-radius:50%;box-shadow:0 0 0 24px #51e4cf12,0 0 0 48px #51e4cf0b}
+.tech-icon{display:grid;place-items:center;width:42px;height:42px;border:1px solid #ffffff66;border-radius:10px;background:#101a24a8;color:#fff;box-shadow:0 8px 24px #00141e66}
+.tech-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.visual-lines{width:64px;height:18px;margin-left:14px;border-top:2px solid #ffffffb8;border-bottom:2px solid #ffffff73;position:relative}
+.visual-lines:after{content:"";position:absolute;left:0;top:7px;width:42px;border-top:2px solid #ffca28}
+.card-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 20%,#fff4 42%,transparent 62%);transform:translateX(-120%);animation:card-glint 6s ease-in-out infinite;animation-delay:var(--motion-delay,0s);mix-blend-mode:soft-light}
 .card-content{display:flex;flex:1;flex-direction:column;padding:22px 25px 25px}
 .article-card h3{margin-top:18px}
-.article-card:hover .card-gif img{filter:saturate(1.12) contrast(1.04)}
-@keyframes card-drift{from{transform:scale(1.02) translate3d(-1.5%,0,0)}to{transform:scale(1.09) translate3d(1.5%,-1.5%,0)}}
 @keyframes card-glint{0%,38%{transform:translateX(-120%)}68%,100%{transform:translateX(120%)}}
-@media(prefers-reduced-motion:reduce){.card-gif img,.card-gif:after{animation:none}}
+@media(prefers-reduced-motion:reduce){.card-visual:after{animation:none}}

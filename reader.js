@@ -130,7 +130,7 @@ function createCard(article, index) {
   card.className = `article-card${article.isReadme ? ' folder-guide' : ''}`;
   card.tabIndex = 0;
   card.style.setProperty('--motion-delay', `${-(index % 7) * .7}s`);
-  card.innerHTML = `<div class="card-gif" aria-hidden="true"><img src="assets/running-animals-canal.png" alt=""></div><div class="card-content"><div class="card-top"><span class="category">${article.isReadme ? 'Folder guide' : article.category}</span><span class="read-time">${article.minutes} min read</span></div><h3>${article.title}</h3><p>${article.description}</p><div class="card-bottom"><span>${article.words.toLocaleString()} words</span><span>→</span></div></div>`;
+  card.innerHTML = `<div class="card-visual" aria-hidden="true"><span class="tech-icon"><svg viewBox="0 0 24 24"><path d="m8.5 7-5 5 5 5M15.5 7l5 5-5 5M14 4l-4 16"/></svg></span><span class="visual-lines"></span></div><div class="card-content"><div class="card-top"><span class="category">${article.isReadme ? 'Folder guide' : article.category}</span><span class="read-time">${article.minutes} min read</span></div><h3>${article.title}</h3><p>${article.description}</p><div class="card-bottom"><span>${article.words.toLocaleString()} words</span><span>→</span></div></div>`;
   card.onclick = () => openArticle(article);
   card.onkeydown = event => { if (event.key === 'Enter') openArticle(article); };
   return card;

@@ -1,0 +1,168 @@
+/* Dark learning-workspace theme inspired by the supplied visual reference. */
+:root {
+  --ink: #f7f8fa;
+  --muted: #b8c1cb;
+  --paper: #151c25;
+  --card: #1c2631;
+  --line: #394552;
+  --green: #00b86b;
+  --green2: #123b35;
+  --orange: #ffca28;
+}
+
+body { background: var(--paper); color: var(--ink); }
+.site-header {
+  height: 82px;
+  padding-inline: max(4vw, 24px);
+  background: #151c25f5;
+  border-color: #46515e;
+}
+.brand, .github-link { color: #fff; }
+.brand-mark { background: #ff9900; color: #111820; }
+.brand > span:last-child > span { color: #ffca28; }
+.site-header nav a { color: #d8dee5; }
+.site-header nav a:hover { color: #ffca28; }
+.github-link {
+  border-color: #ff9900;
+  background: #ff9900;
+  color: #111820;
+  font-weight: 800;
+}
+
+main { width: 100%; }
+.hero {
+  min-height: 510px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 76px max(8vw, 30px);
+  border: 0;
+  background:
+    radial-gradient(circle at 82% 35%, #00d44d 0, #00b95b 18%, transparent 45%),
+    linear-gradient(112deg, #112432 0%, #034d62 35%, #00875b 67%, #2bb6cf 100%);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: auto 0 0;
+  height: 4px;
+  background: linear-gradient(90deg, #63d9f4 0 54%, #fff 54%);
+}
+.hero-copy { max-width: 900px; }
+.lesson-count {
+  margin: 0 0 42px;
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: .5px;
+}
+.hero .eyebrow { color: #ffda44; }
+.hero h1 {
+  color: #fff;
+  font-family: var(--sans);
+  font-weight: 800;
+  line-height: 1.03;
+  letter-spacing: -2.5px;
+}
+.hero h1 em { color: #fff; font-style: normal; }
+.hero h1::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 6px;
+  margin-top: 42px;
+  background: #fff;
+}
+.hero-copy > p:last-child { color: #f2f7f9; font-size: 17px; }
+.hero-stats {
+  background: #111a24d9;
+  border: 1px solid #ffffff38;
+  box-shadow: 0 20px 55px #00192055;
+  backdrop-filter: blur(12px);
+}
+.hero-stats div { border-color: #ffffff32; }
+.hero-stats strong { color: #fff; }
+.hero-stats span { color: #cbd8df; }
+
+.library { width: min(1380px, 90vw); margin: auto; }
+.library h2, .folder-heading h3 { color: #fff; font-family: var(--sans); }
+.library-head .eyebrow, .category, .question-card .question-topic { color: #ffca28; }
+.search, .folder-tools, .view-switch, .kanban-toolbar {
+  background: #1c2631;
+  border-color: #3d4a58;
+  box-shadow: none;
+}
+.search input, .folder-tools input, .kanban-toolbar select {
+  color: #f7f8fa;
+  background: #111923;
+}
+.search input::placeholder, .folder-tools input::placeholder { color: #8f9aa6; }
+kbd { color: #c5ced7; background: #111923; border-color: #46515d; }
+.filter, .folder-filter { color: #d4dbe2; border-color: #46515d; background: #1c2631; }
+.filter.active, .filter:hover, .folder-filter.active, .folder-filter:hover,
+.view-switch button.active { color: #111820; background: #ff9900; border-color: #ff9900; }
+.view-switch button { color: #c4ccd4; }
+.folder-tools input:focus { border-color: #2dbbce; box-shadow: 0 0 0 3px #2dbbce28; }
+
+.article-card {
+  background: #1c2631;
+  border-color: #344250;
+  box-shadow: 0 8px 24px #070b1026;
+}
+.article-card::before { background: linear-gradient(#00c96b, #2dbbce); }
+.article-card:hover { border-color: #2dbbce; box-shadow: 0 20px 45px #05090d66; }
+.article-card h3 { color: #fff; font-family: var(--sans); }
+.article-card p, .read-time, .card-bottom span:first-child { color: #aeb9c4; }
+.card-bottom { border-color: #36424e; }
+.card-bottom span:last-child { background: #123f43; color: #42d5de; }
+.article-card:hover .card-bottom span:last-child { background: #ff9900; color: #111820; }
+.article-card.folder-guide { background: #123944; border-color: #248a95; }
+.article-card.folder-guide::after { color: #111820; background: #ffca28; }
+
+.kanban-column { background: #111923; border-color: #3b4754; }
+.kanban-column-head { color: #fff; background: #202b36; border-color: #3b4754; }
+.kanban-column-head span { background: #111923; color: #d0d7de; }
+.question-card { background: #1c2631; border-color: #394653; box-shadow: 0 5px 14px #0004; }
+.question-card h4 { color: #f4f6f8; font-family: var(--sans); }
+.question-card h4:hover { color: #50d3dc; }
+.question-card-footer select, .copy-question { color: #dbe3ea; background: #111923; border-color: #45515e; }
+.copy-question:hover, .copy-question:focus-visible { color: #111820; background: #ff9900; }
+
+footer { background: #111820; border-color: #394552; color: #aeb8c2; }
+footer > a { color: #ffca28; }
+
+dialog, dialog::backdrop { background: #151c25; }
+.reader-aside { background: #111820; border-color: #394552; }
+.close-reader, .reader-aside nav a:hover, .markdown-body a { color: #43ced6; }
+.aside-label { color: #8e9aa6; border-color: #394552; }
+.reader-aside nav a { color: #aeb9c4; }
+.reader-aside nav a:hover { background: #17343b; }
+.reader-toolbar { color: #aeb9c4; background: #151c25ed; border-color: #394552; }
+.reader-toolbar button, .reader-toolbar a { color: #f5f7f8; background: #202a35; border-color: #44515e; }
+.markdown-body { color: #eef1f4; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  color: #fff;
+  font-family: var(--sans);
+}
+.markdown-body h2, .markdown-body hr { border-color: #46515d; }
+.markdown-body blockquote { color: #e7edf1; background: #202d37; border-color: #ffca28; }
+.markdown-body code { color: #d9f8f4; background: #25343e; }
+.markdown-body pre { color: #e5eef2; background: #09131c; border: 1px solid #354652; }
+.markdown-body th, .markdown-body td { border-color: #46515d; }
+.toast { color: #111820; background: #ffca28; font-weight: 800; }
+
+@media (max-width: 1000px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-stats { margin: 0; }
+}
+@media (max-width: 680px) {
+  .site-header { height: 68px; }
+  .github-link { padding: 8px 10px; }
+  .hero { min-height: 610px; padding: 58px 24px; }
+  .lesson-count { margin-bottom: 26px; }
+  .hero h1 { letter-spacing: -1.5px; }
+  .hero h1::after { width: 110px; margin-top: 30px; }
+  .library { width: calc(100% - 36px); }
+}
