@@ -1,0 +1,38 @@
+.question-card-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.copy-question {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 27px;
+  height: 27px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--green);
+  cursor: pointer;
+}
+.copy-question:hover,
+.copy-question:focus-visible {
+  background: var(--green);
+  color: #fff;
+}
+.copy-question svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.question-card h4 {
+  cursor: pointer;
+}
+.question-card h4:hover {
+  color: var(--green);
+}

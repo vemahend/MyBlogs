@@ -264,13 +264,33 @@ function moveQuestion(key, status) {
   renderKanban();
 }
 
+async function copyQuestionText(question) {
+  const text = `${question.number}. ${question.title}`;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const temporary = document.createElement('textarea');
+    temporary.value = text;
+    temporary.setAttribute('readonly', '');
+    temporary.style.position = 'fixed';
+    temporary.style.opacity = '0';
+    document.body.append(temporary);
+    temporary.select();
+    document.execCommand('copy');
+    temporary.remove();
+  }
+  notify('Question copied');
+}
+
 function questionCard(question, status) {
   const card = document.createElement('article');
   card.className = 'question-card';
   card.draggable = true;
   card.dataset.key = question.key;
-  card.innerHTML = `<span class="question-topic">${question.section}</span><h4>${question.title}</h4><div class="question-card-footer"><span>Question ${question.number}</span><select aria-label="Revision status">${kanbanStatuses.map(item => `<option value="${item.key}" ${item.key === status ? 'selected' : ''}>${item.label}</option>`).join('')}</select></div>`;
+  card.innerHTML = `<div class="question-card-top"><span class="question-topic">${question.section}</span><button class="copy-question" type="button" aria-label="Copy question" title="Copy question"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2m-9-10h6a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3h3Z"/></svg></button></div><h4 title="Click to copy">${question.title}</h4><div class="question-card-footer"><span>Question ${question.number}</span><select aria-label="Revision status">${kanbanStatuses.map(item => `<option value="${item.key}" ${item.key === status ? 'selected' : ''}>${item.label}</option>`).join('')}</select></div>`;
   card.addEventListener('dragstart', () => { draggedQuestionKey = question.key; });
+  card.querySelector('.copy-question').addEventListener('click', event => { event.stopPropagation(); copyQuestionText(question); });
+  card.querySelector('h4').addEventListener('click', () => copyQuestionText(question));
   card.querySelector('select').addEventListener('change', event => moveQuestion(question.key, event.target.value));
   return card;
 }
