@@ -169,6 +169,13 @@ function openArticle(article) {
   document.querySelector('#readerPath').textContent = article.path;
   document.querySelector('#rawLink').href = encodePath(article.path);
   content.innerHTML = window.marked ? marked.parse(article.text) : `<pre>${article.text}</pre>`;
+  const articleFolder = article.path.split('/').slice(0, -1).join('/');
+  content.querySelectorAll('img[src]').forEach(image => {
+    const source = image.getAttribute('src');
+    if (!source || /^(?:[a-z]+:|\/|#)/i.test(source)) return;
+    const relativeSource = source.replace(/^\.\//, '');
+    image.src = articleFolder ? `${articleFolder}/${relativeSource}` : relativeSource;
+  });
   const headings = [...content.querySelectorAll('h2,h3')];
   toc.innerHTML = '';
   headings.forEach((item, index) => {

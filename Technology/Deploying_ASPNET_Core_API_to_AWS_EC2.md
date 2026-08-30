@@ -19,6 +19,10 @@ Imagine you run a popular pizza business. Your **ASP.NET Core API is the kitchen
 
 ## Architecture
 
+![ASP.NET Core API deployed to AWS EC2 architecture](./ASPNet_Core_EC2_Architecture.png)
+
+*ASP.NET Core API traffic flow through an Application Load Balancer to EC2 instances managed by Auto Scaling, with CloudWatch observability.*
+
 ```text
 Client
   |
