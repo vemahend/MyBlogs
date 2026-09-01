@@ -1,4 +1,4 @@
-# AWS Certified Cloud Practitioner (CLF-C02)
+# Day 1 AWS Certified Cloud Practitioner (CLF-C02)
 
 ## Day 1: Cloud Concepts
 
