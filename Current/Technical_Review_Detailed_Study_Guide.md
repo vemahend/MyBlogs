@@ -1,12 +1,11 @@
-# RUSH Digital Technical Review — Detailed Study Guide
+# Technical Review — Detailed Study Guide
 
-**Session:** Thursday, 10 September, 3:00–5:00 pm  
-**Likely format:** Collaborative code review with the RUSH team  
-**Candidate profile:** 13+ years in C#/.NET, React/Angular, SQL Server, microservices, messaging, production support and technical mentoring
+**Likely format:** Collaborative code review 
+**Candidate profile:** C#/.NET, React/Angular, SQL Server, microservices, messaging, production support and technical mentoring
 
 ---
 
-## 1. What RUSH is likely evaluating
+## 1. What Company is likely evaluating
 
 This is unlikely to be a test of how many defects you can list. A senior engineer is expected to understand the intended behaviour, identify the highest risks, explain trade-offs and work constructively with the team.
 
@@ -110,7 +109,7 @@ public async Task<IActionResult> MoveAnimal(
 }
 ```
 
-Do not rush into rewriting it. First explain the intended flow, then surface the main risks.
+Do not Company into rewriting it. First explain the intended flow, then surface the main risks.
 
 ### Serious findings
 
@@ -688,7 +687,7 @@ Name options and selection criteria:
 
 ## 13. Connect answers to your real experience
 
-Use experience honestly; do not claim direct production ownership of a RUSH-specific technology you have only studied.
+Use experience honestly; do not claim direct production ownership of a Company-specific technology you have only studied.
 
 ### Visa Spend Clarity / passkeys
 
@@ -793,7 +792,7 @@ Avoid absolute statements such as:
 2. Rehearse CQRS vs Event Sourcing and expected-stream-version concurrency.
 3. Prepare three concise experience stories: passkey delivery, a production/reliability problem, and a design disagreement or mentoring example.
 
-### When RUSH sends the brief
+### When Company sends the brief
 
 For each file, annotate:
 
