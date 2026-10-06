@@ -2,7 +2,7 @@
 
 This file contains unique interview questions merged from the full `vemahend/MyBlogs` site and grouped technology-wise.
 
-- **Current unique question count: 1454**
+- **Current unique question count: 1470**
 - Duplicate wording is normalized for case, punctuation and Markdown formatting.
 
 ## Technology Index
@@ -20,7 +20,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 - **AWS** — 61
 - **Cloud Architecture, Reliability & Cost** — 26
 - **React & TypeScript** — 129
-- **Angular & RxJS** — 184
+- **Angular & RxJS** — 200
 - **Frontend - General** — 31
 - **Security, Identity & Passkeys** — 120
 - **Testing & Quality** — 6
@@ -1198,7 +1198,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 
 129. A React page becomes slow after loading a large dataset. How do you improve it?
 
-## Angular & RxJS (184)
+## Angular & RxJS (200)
 
 ### Angular and SPA Architecture
 
@@ -1414,6 +1414,22 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 182. What Is Property Binding in Angular?
 183. AngularJS vs Modern Angular
 184. What Is Two-Way Binding in Angular?
+185. How Would You Structure a Large Enterprise Angular App?
+186. How Did Standalone Components Evolve from Developer Preview in Angular 14 to the Default Component Model in Angular 22?
+187. How Did Typed Reactive Forms in Angular 14 Improve Safety, and What Does Angular 22 Add with Signal Forms?
+188. How Do Signal Inputs, Outputs, Model Inputs, and Signal Queries Differ from Decorator APIs?
+189. How Does @for Track Items, and How Does It Compare with an Angular 14 trackBy Function?
+190. How Does an Angular 14 NgModule Application Differ from an Angular 22 Standalone Application?
+191. How Does Built-in @if, @for, and @switch Control Flow Differ from Structural Directives?
+192. How Did Angular Build and Development Tooling Change from Angular 14 Webpack to the Modern Application Builder?
+193. How Have SSR, Hydration, Event Replay, and Incremental Hydration Evolved Since Angular 14?
+194. How Do Testing Tools Change from Angular 14 Karma/Jasmine Projects to Vitest in Angular 22?
+195. What Is Zoneless Change Detection, and How Does It Differ from Angular 14 Zone.js Behavior?
+196. What Security Responsibilities Belong to Interceptors and Route Guards, and What Must Always Be Enforced by the Backend?
+197. Which Angular 22 Features Would You Adopt Immediately, and Which Would You Introduce Incrementally?
+198. How Would You Roll Out Angular 22 Safely and Recover if Production Metrics Regress?
+199. After Reaching Angular 22, How Would You Prioritize Optional Modernization and Measure Whether It Creates Value?
+200. What Would You Check for Node.js, TypeScript, RxJS, Angular Material, and Third-Party Compatibility at Each Step?
 
 ## Frontend - General (31)
 
