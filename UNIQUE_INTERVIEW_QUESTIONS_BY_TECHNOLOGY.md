@@ -2,27 +2,28 @@
 
 This file contains unique interview questions merged from the full `vemahend/MyBlogs` site and grouped technology-wise.
 
-- **Current unique question count: 2319**
+- **Current unique question count: 2435**
 - Duplicate wording is normalized for case, punctuation and Markdown formatting.
+- Repeated article-template headings are excluded.
 
 ## Technology Index
 
-- **C# & .NET** — 160
-- **Dependency Injection** — 29
+- **C# & .NET** — 161
+- **Dependency Injection** — 30
 - **ASP.NET Core & Web API** — 134
 - **Entity Framework Core & Dapper** — 41
-- **SQL Server & Data** — 165
+- **SQL Server & Data** — 167
 - **Architecture & System Design** — 88
 - **Modernisation & Technical Debt** — 60
-- **Microservices & Distributed Systems** — 84
+- **Microservices & Distributed Systems** — 131
 - **RabbitMQ & Messaging** — 122
 - **Azure** — 131
-- **AWS** — 259
+- **AWS** — 261
 - **Cloud Architecture, Reliability & Cost** — 26
-- **React & TypeScript** — 129
+- **React & TypeScript** — 131
 - **Angular & RxJS** — 200
 - **Frontend - General** — 41
-- **Security, Identity & Passkeys** — 216
+- **Security, Identity & Passkeys** — 217
 - **Testing & Quality** — 6
 - **CI/CD & DevOps** — 27
 - **Observability & Production Support** — 8
@@ -31,13 +32,14 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 - **HR & Company Fit** — 16
 - **Cross-Technology Scenarios & CV Questions** — 10
 - **Cloud-Native .NET & Full Stack** — 130
-- **Concurrency, Resilience & Reliability** — 15
+- **Concurrency, Resilience & Reliability** — 45
 - **CI/CD, Containers & DevOps** — 56
 - **QA / Test Engineering** — 76
+- **Cross-Technology & Other** — 30
 
 ---
 
-## C# & .NET (160)
+## C# & .NET (161)
 
 ### C# and .NET
 
@@ -225,8 +227,11 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 158. A fake asynchronous method that internally performs synchronous work can still block a thread.
 159. When the response arrives, an available thread continues the payment method.
 160. When to use and when not to use it
+### Technical Review Detailed Study Guide
 
-## Dependency Injection (29)
+161. Is the operation synchronous, asynchronous or eventually consistent?
+
+## Dependency Injection (30)
 
 ### Dependency Injection
 
@@ -261,6 +266,9 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 27. Why is injecting a scoped service into a singleton unsafe, and how would you redesign it?
 28. Is a scoped service guaranteed to be thread-safe or limited to one HTTP request?
 29. When would you use IDbContextFactory<TContext> instead of a scoped DbContext?
+### Technical Review Detailed Study Guide
+
+30. A singleton must not capture a scoped DbContext or other non-thread-safe state.
 
 ## ASP.NET Core & Web API (134)
 
@@ -491,7 +499,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 40. What exactly triggers execution of an EF Core IQueryable?
 41. Why can enumerating the same EF Core query twice produce different results?
 
-## SQL Server & Data (165)
+## SQL Server & Data (167)
 
 ### SQL Server and Data Access
 
@@ -708,6 +716,10 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 163. Why IQueryable Can Be More Efficient
 164. When Can IQueryable Cause Performance Problems?
 165. A Real API Example
+### Technical Review Detailed Study Guide
+
+166. Is a distributed transaction being assumed?
+167. when a conditional SQL update is sufficient;
 
 ## Architecture & System Design (88)
 
@@ -883,7 +895,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 59. How do you quantify the business risk of technical debt?
 60. Tell me about technical debt you personally reduced.
 
-## Microservices & Distributed Systems (84)
+## Microservices & Distributed Systems (131)
 
 ### Microservices
 
@@ -1001,6 +1013,69 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Standalone C# guides
 
 84. When would you extract the capability into a microservice?
+### Technical Review Detailed Study Guide
+
+85. an integration event must eventually be published exactly once logically, even if it is delivered more than once physically.
+86. A circuit breaker prevents repeatedly calling a dependency known to be unhealthy; it does not preserve an unpublished event. The outbox handles durability.
+87. Can the operation tolerate eventual consistency?
+88. Is the event a domain event internal to the service or a stable integration event?
+89. Explain idempotency, outbox and inbox without notes.
+### Clean Architecture Senior DotNet Interview Notes
+
+90. What is Clean Architecture?
+91. Why do we need Clean Architecture?
+92. Domain Layer
+93. Domain Events
+94. Domain Exceptions
+95. Where should validation go?
+96. Domain validation
+97. Where does the Outbox Pattern fit?
+### Concurrent Updates in ASP.NET Core and EF Core
+
+98. What is a concurrent update?
+99. Why an application-level lock is usually not enough
+100. Can simplify very short, highly contested critical sections.
+101. Cancellation considerations
+102. Cancellation occurring before, during and after a commit
+### OutboxPattern
+
+103. Why Can't We Just Use a Database Transaction?
+104. How Does the Event Reach RabbitMQ?
+105. What If RabbitMQ Is Down?
+106. Why Is the Outbox Pattern Useful?
+### Production Ready AI Generated Code Review in .NET
+
+107. Finds the accounts
+108. Do Account IDs Need Encryption?
+109. What Is Atomicity?
+110. Isolation
+111. What Is Concurrency?
+112. Does Pessimistic Locking Prevent Duplicate Payments?
+113. Why?
+114. What Is Idempotency?
+115. Why This Is Dangerous
+116. How Outbox Works
+117. Don't Return EF Entities Directly
+118. CancellationToken
+119. What if debit succeeds but credit fails?
+120. What if two different transfers access the same balance simultaneously?
+121. What if the same request is submitted twice?
+122. What if the database succeeds but message publishing fails?
+123. Don't Confuse These Problems
+### Rate Limiting and Throttling DotNet
+
+124. What Is Rate Limiting?
+125. Downstream service overload
+126. Why Not Use One Global Limit?
+127. What Metrics Should We Monitor?
+### aspnet core dependency injection
+
+128. What Happens Internally?
+### exponential backoff jitter retry policies
+
+129. Why Do We Need Retry Backoff?
+130. What Is Jitter?
+131. Don't Retry Every Exception Blindly
 
 ## RabbitMQ & Messaging (122)
 
@@ -1305,7 +1380,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 130. Compare Azure Key Vault with AWS Secrets Manager and KMS.
 131. Compare Azure Service Bus and Event Grid with Amazon SQS, SNS, and EventBridge.
 
-## AWS (259)
+## AWS (261)
 
 ### AWS Architecture and Serverless
 
@@ -1578,6 +1653,10 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 257. Why should practice resources be deleted afterwards?
 258. A bucket is a container; an object is stored data plus metadata identified by a key.
 259. A JSON test event containing payment information.
+### Deploying ASPNET Core API to AWS EC2
+
+260. Do not expose the API port directly to the internet.
+261. What happens if one server crashes?
 
 ## Cloud Architecture, Reliability & Cost (26)
 
@@ -1612,7 +1691,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 25. Security asks you to remove all stored cloud credentials from applications and pipelines. How would you migrate to workload identities and roles?
 26. You must move a customer-facing system from Azure to AWS, or AWS to Azure, with minimal downtime. What should remain portable and what should be redesigned?
 
-## React & TypeScript (129)
+## React & TypeScript (131)
 
 ### React and Mobile/Web Experience
 
@@ -1771,6 +1850,10 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Scenario Questions
 
 129. A React page becomes slow after loading a large dataset. How do you improve it?
+### Technical Review Detailed Study Guide
+
+130. Do not expose secrets in frontend configuration.
+131. how your Visa passkey, React/.NET, RabbitMQ and production experience support your recommendation.
 
 ## Angular & RxJS (200)
 
@@ -2057,7 +2140,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 40. How do accessibility and keyboard navigation influence component design?
 41. How would you roll out a breaking frontend and API change safely?
 
-## Security, Identity & Passkeys (216)
+## Security, Identity & Passkeys (217)
 
 ### Security
 
@@ -2335,6 +2418,9 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Stakeholder Communication
 
 216. How do you explain OAuth 2.0 or zero trust to a non-technical stakeholder?
+### Technical Review Detailed Study Guide
+
+217. Write short notes under correctness, security, reliability, performance, maintainability and tests.
 
 ## Testing & Quality (6)
 
@@ -2699,7 +2785,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 129. How do you demonstrate progress on foundational work with little visible UI?
 130. Tell me about a time communication prevented a technical or delivery failure.
 
-## Concurrency, Resilience & Reliability (15)
+## Concurrency, Resilience & Reliability (45)
 
 ### Priority 1 — CQRS
 
@@ -2734,6 +2820,42 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Standalone C# guides
 
 15. What happens when the user leaves the page?
+### Technical Review Detailed Study Guide
+
+16. a read-check-write sequence that is unsafe under concurrency;
+17. A meaningful concurrency test
+18. a retry of the same logical action retains the operation ID;
+19. domain operation ID vs separate idempotency key;
+20. Explain optimistic concurrency, atomic updates and pessimistic locking aloud.
+21. why pessimistic locking does not make the second business action valid;
+### Circuit Breaker Revision Guide
+
+22. 1. What problem does it solve?
+23. A cascading system failure
+24. How it works internally
+25. Which failures should be counted?
+26. Where should the breaker be placed?
+27. What should happen while it is open?
+28. How should thresholds be selected?
+29. When to use it
+30. A failure could consume limited resources
+31. When every individual call must always be attempted regardless of dependency health
+32. A small retry count
+### Retry Policies Payment Systems
+
+33. What Is a Retry Policy?
+34. What Should We Retry?
+35. What Should We NOT Retry?
+36. Which errors are retryable?
+37. How many retries are allowed?
+38. What is the delay between retries?
+39. Are we using exponential backoff?
+40. Are we adding jitter?
+41. Is the operation idempotent?
+42. What happens after retries are exhausted?
+43. Should the message go to a DLQ?
+44. How will failures be monitored and alerted?
+45. Could retries overload an already unhealthy dependency?
 
 ## CI/CD, Containers & DevOps (56)
 
@@ -2906,4 +3028,39 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 74. How have you improved QA processes in your team?
 75. How do you use Jira/TestRail to manage testing?
 76. How do you contribute during refinement/planning rather than waiting for development to finish?
+
+## Cross-Technology & Other (30)
+
+### Technical Review Detailed Study Guide
+
+1. What Company is likely evaluating
+2. explain alternatives and avoid unnecessary complexity;
+3. A strong opening statement
+4. A repeatable code-review method
+5. What business operation does this code perform?
+6. What must always remain true?
+7. Can the same request be submitted twice?
+8. Can two users update the same animal or movement simultaneously?
+9. What response should the caller receive for validation failure, conflict, duplicate submission or dependency failure?
+10. Is there an audit or regulatory requirement?
+11. Which service owns the data?
+12. an animal cannot be active at two locations at the same time;
+13. a movement must not be recorded twice;
+14. a user must be authorized for the source property;
+15. Isolation levels
+16. Why duplicates happen
+17. domain changes are explicit;
+18. Does this service own the animal or movement state it changes?
+19. Is the API leaking its persistence model?
+20. Cancellation before commit causes no partial write.
+21. a pending state prevents accidental additional clicks;
+22. a 409 conflict produces a useful refresh/review message;
+23. How to answer common review questions
+24. Do not interrupt the walkthrough for every naming concern.
+25. Compare alternatives and recommend the smallest suitable fix.
+26. Explain testing immediately after each important change.
+27. Explain what evidence would change your decision.
+28. When Company sends the brief
+29. why a check-then-update sequence is racy;
+30. cancellation limits and committed work;
 
