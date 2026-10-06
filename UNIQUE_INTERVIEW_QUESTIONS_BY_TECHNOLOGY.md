@@ -2,22 +2,22 @@
 
 This file contains unique interview questions merged from the full `vemahend/MyBlogs` site and grouped technology-wise.
 
-- **Current unique question count: 2075**
+- **Current unique question count: 2319**
 - Duplicate wording is normalized for case, punctuation and Markdown formatting.
 
 ## Technology Index
 
-- **C# & .NET** — 144
-- **Dependency Injection** — 19
-- **ASP.NET Core & Web API** — 131
-- **Entity Framework Core & Dapper** — 39
-- **SQL Server & Data** — 152
+- **C# & .NET** — 160
+- **Dependency Injection** — 29
+- **ASP.NET Core & Web API** — 134
+- **Entity Framework Core & Dapper** — 41
+- **SQL Server & Data** — 165
 - **Architecture & System Design** — 88
 - **Modernisation & Technical Debt** — 60
-- **Microservices & Distributed Systems** — 83
+- **Microservices & Distributed Systems** — 84
 - **RabbitMQ & Messaging** — 122
 - **Azure** — 131
-- **AWS** — 61
+- **AWS** — 259
 - **Cloud Architecture, Reliability & Cost** — 26
 - **React & TypeScript** — 129
 - **Angular & RxJS** — 200
@@ -31,13 +31,13 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 - **HR & Company Fit** — 16
 - **Cross-Technology Scenarios & CV Questions** — 10
 - **Cloud-Native .NET & Full Stack** — 130
-- **Concurrency, Resilience & Reliability** — 14
+- **Concurrency, Resilience & Reliability** — 15
 - **CI/CD, Containers & DevOps** — 56
 - **QA / Test Engineering** — 76
 
 ---
 
-## C# & .NET (144)
+## C# & .NET (160)
 
 ### C# and .NET
 
@@ -207,8 +207,26 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Observability, Logging, and Monitoring Deep Dive
 
 144. When should asynchronous messaging use a span link instead of a parent-child span?
+### Standalone C# guides
 
-## Dependency Injection (19)
+145. When the operation completes, the continuation invokes MoveNext, which restores the logical flow and calls GetResult. GetResult returns the value or rethrows the original exception.
+146. What exactly does ConfigureAwait(false) change, and what does it not change?
+147. When would you choose ValueTask<T> or IAsyncEnumerable<T>?
+148. How do .NET 10 diagnostics differ for handled exceptions?
+149. When would you return a typed result instead of throwing?
+150. How do you handle an exception after response headers have started?
+151. Which LINQ operators stream, buffer, or execute immediately?
+152. How do you find the correct boundaries rather than creating many tiny services?
+153. Where should transaction and authorization responsibilities live?
+154. Does await Create a Thread? — .NET Interview Revision Guide
+155. A file operation
+156. A message from an external service
+157. When it completes, an available thread runs the continuation.
+158. A fake asynchronous method that internally performs synchronous work can still block a thread.
+159. When the response arrives, an available thread continues the payment method.
+160. When to use and when not to use it
+
+## Dependency Injection (29)
 
 ### Dependency Injection
 
@@ -231,8 +249,20 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 17. Constructor injection versus service locator?
 18. How do you handle multiple implementations of an interface?
 19. How do you test a service with injected dependencies?
+### Standalone C# guides
 
-## ASP.NET Core & Web API (131)
+20. A transient service is constructed for each resolution request. If the same transient is requested twice, two instances normally result.
+21. A scoped service is constructed on first use within a scope and cached in that scope. Later resolutions in that scope return the same instance.
+22. A singleton is normally constructed lazily once and cached by the root provider.
+23. A scoped EF Core BankingDbContext tracks the transfer, account updates, and outbox event as one unit of work.
+24. A singleton, thread-safe currency-reference cache can serve all requests. A stateless validator may be transient.
+25. A singleton BackgroundService creates a scope per batch, resolves a scoped DbContext, and publishes pending outbox messages. The broker is transport, not ledger truth.
+26. A worker creates a scope, publishes the outbox event, records success, and disposes the scope.
+27. Why is injecting a scoped service into a singleton unsafe, and how would you redesign it?
+28. Is a scoped service guaranteed to be thread-safe or limited to one HTTP request?
+29. When would you use IDbContextFactory<TContext> instead of a scoped DbContext?
+
+## ASP.NET Core & Web API (134)
 
 ### ASP.NET Core and Web API
 
@@ -393,8 +423,13 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 129. Compare Hot Chocolate and GraphQL.NET for an ASP.NET Core service.
 130. How do query resolvers and field middleware work in Hot Chocolate?
 131. How do you rate-limit GraphQL when every operation uses the same HTTP endpoint?
+### Standalone C# guides
 
-## Entity Framework Core & Dapper (39)
+132. Why can .Result still be dangerous in ASP.NET Core if the classic deadlock is unlikely?
+133. An HTTP response
+134. Do not use Task.Run for normal ASP.NET Core I/O
+
+## Entity Framework Core & Dapper (41)
 
 ### Entity Framework Asked Questions
 
@@ -451,8 +486,12 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Observability, Logging, and Monitoring Deep Dive
 
 39. How do you instrument ASP.NET Core, EF Core, HttpClient, and GraphQL resolvers?
+### Standalone C# guides
 
-## SQL Server & Data (152)
+40. What exactly triggers execution of an EF Core IQueryable?
+41. Why can enumerating the same EF Core query twice produce different results?
+
+## SQL Server & Data (165)
 
 ### SQL Server and Data Access
 
@@ -654,6 +693,21 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### GraphQL with Hot Chocolate, GraphQL.NET, and Apollo
 
 152. How do DataLoader and batching prevent N+1 database queries?
+### Standalone C# guides
+
+153. When to use it and when not to use it
+154. Compare it with related concepts
+155. How do AsEnumerable, ToList, and AsAsyncEnumerable differ?
+156. How would you diagnose and fix an N+1 query or cartesian explosion?
+157. How do IEnumerable<T>, IQueryable<T>, and IAsyncEnumerable<T> differ in execution ownership?
+158. A database query
+159. IEnumerable vs IQueryable vs List in C#: What Actually Happens Behind the Scenes?
+160. What is IEnumerable<T>?
+161. What is IQueryable<T>?
+162. What is List<T>?
+163. Why IQueryable Can Be More Efficient
+164. When Can IQueryable Cause Performance Problems?
+165. A Real API Example
 
 ## Architecture & System Design (88)
 
@@ -829,7 +883,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 59. How do you quantify the business risk of technical debt?
 60. Tell me about technical debt you personally reduced.
 
-## Microservices & Distributed Systems (83)
+## Microservices & Distributed Systems (84)
 
 ### Microservices
 
@@ -944,6 +998,9 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 ### Stakeholder Communication
 
 83. How do you explain eventual consistency and delayed updates to a product owner?
+### Standalone C# guides
+
+84. When would you extract the capability into a microservice?
 
 ## RabbitMQ & Messaging (122)
 
@@ -1248,7 +1305,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 130. Compare Azure Key Vault with AWS Secrets Manager and KMS.
 131. Compare Azure Service Bus and Event Grid with Amazon SQS, SNS, and EventBridge.
 
-## AWS (61)
+## AWS (259)
 
 ### AWS Architecture and Serverless
 
@@ -1317,6 +1374,210 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 59. S3 storage cost grows every month because old uploads and incomplete multipart uploads are never removed. How would you analyze usage and introduce safe lifecycle policies?
 60. You need to release a breaking Lambda change without interrupting API clients. How would you use versions, aliases, weighted routing, API versioning, canary validation, and rollback?
 61. A customer asks what you personally implemented in AWS at Visa. How would you give a precise STAR answer that separates your contribution from the wider team’s work?
+### AWS practice
+
+62. Why companies use AWS
+63. What is cloud computing?
+64. How to distinguish the pillars
+65. A web application to Amazon EC2
+66. A database to Amazon RDS
+67. Why companies migrate
+68. An online store automatically adds servers during a sale and removes them afterwards. Which cloud benefit is this?
+69. A company runs its application across two Availability Zones. Which benefit is it trying to achieve?
+70. Moving an application to EC2 without changing its architecture is which migration strategy?
+71. Moving a database to Amazon RDS with a few improvements is which migration strategy?
+72. What is the difference between agility and elasticity?
+73. Reducing an oversized EC2 instance is known as what?
+74. Purchasing physical servers is mainly a fixed or variable cost?
+75. Where data is stored
+76. How long logs are retained
+77. Who can access information
+78. How information is encrypted
+79. How security evidence is reported
+80. A browser communicating with a website through HTTPS
+81. An application communicating with an API using TLS
+82. A service sending protected data across a network
+83. Who deleted an S3 bucket?
+84. Who changed a security group?
+85. When was an IAM policy updated?
+86. Which API operation was called?
+87. Is this S3 bucket publicly accessible?
+88. Is encryption enabled?
+89. Did this security group's configuration change?
+90. Which actions are allowed or denied
+91. Which resources the actions apply to
+92. Why least privilege matters
+93. Do not use the root user for everyday work
+94. Do not create root access keys unless absolutely necessary
+95. Who is responsible for the physical security of AWS data centres?
+96. Who patches the guest operating system on an Amazon EC2 instance?
+97. Who patches the underlying operating system for Amazon RDS?
+98. Which principle says users should receive only the permissions they need?
+99. Which service records AWS API activity?
+100. Which service monitors metrics and can create alarms?
+101. Which service records resource configurations and configuration changes?
+102. Where can a customer download AWS compliance reports?
+103. Which service detects suspicious activity in an AWS environment?
+104. Which service scans supported workloads for vulnerabilities?
+105. Which service protects web applications from common web exploits?
+106. Which service helps protect against DDoS attacks?
+107. Should an application store permanent access keys in its source code?
+108. What are the two main types of encryption discussed in this chapter?
+109. A user uploads an image to S3.
+110. Is stateful: return traffic for an allowed connection is automatically permitted
+111. Is stateless: return traffic must be explicitly permitted
+112. An order API places an order message in SQS.
+113. A processing service retrieves it later.
+114. A temporary processing failure does not require the API to wait.
+115. Which access method is usually easiest for a beginner performing a one-time visual task?
+116. Which approach should be used to deploy the same infrastructure consistently many times?
+117. What is the difference between a Region and an Availability Zone?
+118. Why would an application operate across multiple Availability Zones?
+119. Which service provides virtual servers with operating-system control?
+120. Which service runs event-driven functions without server management?
+121. Which service runs containers without requiring customers to manage servers?
+122. What is the difference between ECS and EKS?
+123. Which service is a managed relational database service?
+124. Which service is a serverless NoSQL database?
+125. Which service provides in-memory caching?
+126. What is the difference between DMS and SCT?
+127. What does a NAT gateway allow a private-subnet resource to do?
+128. What is the difference between a security group and a network ACL?
+129. Which service provides DNS?
+130. Which service caches and delivers content through edge locations?
+131. Which service provides a dedicated private connection to AWS?
+132. What are the three main storage types?
+133. Which service provides object storage?
+134. What is the difference between EBS and instance store?
+135. Which service queries data in S3 by using SQL?
+136. Which service processes streaming data?
+137. Which service creates business-intelligence dashboards?
+138. What is the difference between SQS and SNS?
+139. Which service traces requests through distributed applications?
+140. A Region is a geographical area; an Availability Zone is an isolated location inside a Region.
+141. A security group is stateful and operates at resource level; a network ACL is stateless and operates at subnet level.
+142. A regional Reserved Instance can provide a billing discount across eligible usage in a Region.
+143. A zonal Reserved Instance can include a capacity reservation in a particular Availability Zone.
+144. A critical database that cannot be interrupted
+145. A single production server with no failover
+146. Compare architectural options
+147. Find cost changes
+148. Compare production and development expenditure
+149. Find a security configuration concern
+150. Is an AWS event affecting my resources?
+151. Is scheduled maintenance planned for my environment?
+152. What actions does AWS recommend?
+153. Which EC2 purchasing option has no long-term commitment?
+154. Which option is appropriate for interruptible batch processing?
+155. Which options suit stable, predictable compute usage over one or three years?
+156. What is the difference between a Dedicated Host and a Dedicated Instance?
+157. Does a Capacity Reservation automatically provide a pricing discount?
+158. Which tool estimates the cost of a planned AWS architecture?
+159. Which tool analyzes historical spending and usage trends?
+160. Which service alerts you when forecast spending approaches a threshold?
+161. Which report provides detailed cost and usage information?
+162. How do cost allocation tags help an organization?
+163. What is consolidated billing?
+164. Does a service control policy directly grant permissions?
+165. Which service provides automated best-practice recommendations?
+166. Which dashboard shows AWS events that may affect your resources?
+167. Where do you create and manage AWS support cases?
+168. Which AWS resource provides community questions and answers?
+169. Where can customers purchase third-party software for AWS?
+170. What is the difference between an independent software vendor and a system integrator?
+171. Who should be contacted to report abuse involving AWS resources?
+172. Which type of support is intended for the most mission-critical enterprise environments?
+173. A Dedicated Host provides host-level placement and physical-server visibility; Dedicated Instances provide single-tenant hardware without the same host-level control.
+174. An independent software vendor builds software; a system integrator helps customers design, migrate, integrate, and operate solutions.
+175. A rapid revision guide
+176. A 40-question weighted mock exam
+177. An answer key with explanations
+178. A method for reviewing weak topics
+179. Agility: How quickly can the company experiment or make changes?
+180. Elasticity: How automatically can capacity grow and shrink with demand?
+181. Authentication: Who are you?
+182. Authorization: What are you allowed to do?
+183. Do not use the notes while answering.
+### AWS mock/practice questions
+
+184. A retail application automatically adds servers during a holiday sale and removes them after demand falls. Which cloud benefit does this demonstrate?
+185. A development team can create an experimental environment in minutes and delete it when testing finishes. Which cloud benefit is demonstrated?
+186. A company deploys its application in two Availability Zones so traffic can continue if one AZ fails. Which Well-Architected pillar is most directly addressed?
+187. A company replaces manual deployments with a repeatable automated pipeline and regularly improves its operational procedures. Which pillar is most relevant?
+188. A company moves an existing application to EC2 without changing its architecture. Which migration strategy is this?
+189. A company moves a self-managed database to Amazon RDS and makes only small changes. Which migration strategy is this?
+190. A company redesigns a large application as event-driven serverless functions. Which migration strategy is this?
+191. Which activity is an example of rightsizing?
+192. Which is primarily a variable cloud cost?
+193. Why might a company deploy applications in multiple AWS Regions?
+194. Under the shared responsibility model, who protects AWS physical data centres?
+195. Who is normally responsible for patching the guest operating system on an EC2 instance?
+196. Which task does AWS normally perform for Amazon RDS?
+197. Which security principle grants a user only the permissions required for their job?
+198. An EC2 application needs temporary permission to read one S3 bucket. What is the preferred solution?
+199. Which service records AWS API and account activity and can help identify who deleted a resource?
+200. Which service evaluates resource configurations and records how those configurations change?
+201. Where can a customer obtain AWS compliance reports?
+202. Which service detects suspicious or potentially malicious activity in an AWS environment?
+203. Which service scans supported workloads for software vulnerabilities and unintended network exposure?
+204. Which service helps protect a web application from SQL injection and cross-site scripting?
+205. Which actions help protect the AWS account root user?
+206. A company needs complete control of the guest operating system for a long-running application. Which service should it use?
+207. An image uploaded to S3 must automatically trigger short-running code that creates a thumbnail. Which service is the best fit?
+208. A company wants to run containers without managing EC2 hosts. Which service should it use?
+209. Which service provides managed Kubernetes?
+210. Which service provides a managed relational database?
+211. Which database is a serverless NoSQL key-value and document database?
+212. Which service helps migrate or continuously replicate database data with minimal downtime?
+213. A private-subnet EC2 instance must download software updates from the internet without accepting internet-initiated inbound connections. Which component should be used?
+214. Which statement correctly compares security groups and network ACLs?
+215. Which service translates domain names into network addresses?
+216. Which service caches content at edge locations to reduce latency?
+217. Which storage service is designed for objects such as images, documents, backups, and logs?
+218. Which storage option provides persistent block storage for an EC2 instance?
+219. Which service allows analysts to query data stored in S3 by using SQL?
+220. A fault-tolerant batch-processing workload can restart after interruption. Which EC2 purchasing option can offer the greatest discount for spare capacity?
+221. Which tool should a solutions architect use to estimate the monthly cost of a planned architecture?
+222. A finance team wants an alert when forecast monthly spending reaches 80% of a defined amount. Which service should it use?
+223. Which are benefits of consolidated billing in AWS Organizations?
+### AWS practice
+
+224. What you will build
+225. A cost budget and email alert
+226. A private S3 bucket containing a test file
+227. A simple serverless Lambda function
+228. An understanding of the Lambda execution role
+229. Do not assume that every resource is free.
+230. Do not create access keys for the root user.
+231. Do not place passwords or access keys in code.
+232. A budget alerts you about cost; it is not automatically a hard spending limit.
+233. Why do this first?
+234. What you learned
+235. Why must the bucket name be unique?
+236. Is payment-report.txt a bucket or an object?
+237. Is S3 object, block, or file storage?
+238. Why did we leave Block Public Access enabled?
+239. An object
+240. What happened behind the scenes?
+241. A Lambda function
+242. An IAM execution role
+243. Find the message:
+244. Find the Execution role section.
+245. Why does Lambda need a role?
+246. Find the automatically created role associated with the deleted Lambda function.
+247. Keep or delete the budget?
+248. Why did we create a budget before other resources?
+249. What is the difference between an S3 bucket and an S3 object?
+250. Why did we keep Block Public Access enabled?
+251. Who manages Lambda's underlying servers?
+252. What information was passed to the Lambda handler?
+253. Where did console.log output appear?
+254. Why does a Lambda function need an execution role?
+255. Should the execution role receive administrator access for this exercise?
+256. Which service would show who deleted the Lambda function?
+257. Why should practice resources be deleted afterwards?
+258. A bucket is a container; an object is stored data plus metadata identified by a key.
+259. A JSON test event containing payment information.
 
 ## Cloud Architecture, Reliability & Cost (26)
 
@@ -2438,7 +2699,7 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 129. How do you demonstrate progress on foundational work with little visible UI?
 130. Tell me about a time communication prevented a technical or delivery failure.
 
-## Concurrency, Resilience & Reliability (14)
+## Concurrency, Resilience & Reliability (15)
 
 ### Priority 1 — CQRS
 
@@ -2470,6 +2731,9 @@ This file contains unique interview questions merged from the full `vemahend/MyB
 
 13. How do stateless services support elasticity and resilience?
 14. How do you design for transient faults without creating retry storms?
+### Standalone C# guides
+
+15. What happens when the user leaves the page?
 
 ## CI/CD, Containers & DevOps (56)
 
