@@ -1,43 +1,39 @@
 # Unique Interview Question Bank — Technology-wise
 
-Source: `vemahend/MyBlogs/INTERVIEW_QUESTIONS.md`
+This file contains unique interview questions merged from the full `vemahend/MyBlogs` site and grouped technology-wise.
 
-This file contains **all unique interview questions/prompts** extracted from the source question bank and regrouped technology-wise.
-
-- Original numbered items found: **1500**
-- Exact/case/punctuation-normalized duplicates removed: **34**
-- Non-question numbered guide headings excluded: **17**
-- Final unique questions/prompts: **1449**
+- **Current unique question count: 1454**
+- Duplicate wording is normalized for case, punctuation and Markdown formatting.
 
 ## Technology Index
 
-- [C# & .NET](#c-net) — 100
-- [Dependency Injection](#dependency-injection) — 19
-- [ASP.NET Core & Web API](#aspnet-core-web-api) — 83
-- [Entity Framework Core & Dapper](#entity-framework-core-dapper) — 32
-- [SQL Server & Data](#sql-server-data) — 141
-- [Architecture & System Design](#architecture-system-design) — 65
-- [Modernisation & Technical Debt](#modernisation-technical-debt) — 60
-- [Microservices & Distributed Systems](#microservices-distributed-systems) — 60
-- [RabbitMQ & Messaging](#rabbitmq-messaging) — 122
-- [Azure](#azure) — 64
-- [AWS](#aws) — 61
-- [Cloud Architecture, Reliability & Cost](#cloud-architecture-reliability-cost) — 26
-- [React & TypeScript](#react-typescript) — 129
-- [Angular & RxJS](#angular-rxjs) — 179
-- [Frontend - General](#frontend---general) — 31
-- [Security, Identity & Passkeys](#security-identity-passkeys) — 120
-- [Testing & Quality](#testing-quality) — 6
-- [CI/CD & DevOps](#cicd-devops) — 27
-- [Observability & Production Support](#observability-production-support) — 8
-- [Live Coding & Practical Tasks](#live-coding-practical-tasks) — 12
-- [Leadership, Behavioral & Consulting](#leadership-behavioral-consulting) — 78
-- [HR & Company Fit](#hr-company-fit) — 16
-- [Cross-Technology Scenarios & CV Questions](#cross-technology-scenarios-cv-questions) — 10
+- **C# & .NET** — 100
+- **Dependency Injection** — 19
+- **ASP.NET Core & Web API** — 83
+- **Entity Framework Core & Dapper** — 32
+- **SQL Server & Data** — 141
+- **Architecture & System Design** — 65
+- **Modernisation & Technical Debt** — 60
+- **Microservices & Distributed Systems** — 60
+- **RabbitMQ & Messaging** — 122
+- **Azure** — 64
+- **AWS** — 61
+- **Cloud Architecture, Reliability & Cost** — 26
+- **React & TypeScript** — 129
+- **Angular & RxJS** — 184
+- **Frontend - General** — 31
+- **Security, Identity & Passkeys** — 120
+- **Testing & Quality** — 6
+- **CI/CD & DevOps** — 27
+- **Observability & Production Support** — 8
+- **Live Coding & Practical Tasks** — 12
+- **Leadership, Behavioral & Consulting** — 78
+- **HR & Company Fit** — 16
+- **Cross-Technology Scenarios & CV Questions** — 10
 
 ---
 
-## C# & .NET
+## C# & .NET (100)
 
 ### C# and .NET
 
@@ -154,7 +150,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 99. Why generations?
 100. What triggers Gen2?
 
-## Dependency Injection
+## Dependency Injection (19)
 
 ### Dependency Injection
 
@@ -178,7 +174,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 18. How do you handle multiple implementations of an interface?
 19. How do you test a service with injected dependencies?
 
-## ASP.NET Core & Web API
+## ASP.NET Core & Web API (83)
 
 ### ASP.NET Core and Web API
 
@@ -278,7 +274,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 
 83. A junior developer submits code with business logic inside the controller. What feedback do you give?
 
-## Entity Framework Core & Dapper
+## Entity Framework Core & Dapper (32)
 
 ### Entity Framework Asked Questions
 
@@ -321,7 +317,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 
 32. Why did you use both EF and Dapper?
 
-## SQL Server & Data
+## SQL Server & Data (141)
 
 ### SQL Server and Data Access
 
@@ -499,7 +495,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 
 141. In the Capgemini auction platform, what SQL optimization work did you perform?
 
-## Architecture & System Design
+## Architecture & System Design (65)
 
 ### Architecture and Design
 
@@ -575,7 +571,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 64. How do you design multi-tenant data access safely?
 65. How do you plan a zero-downtime deployment with database changes?
 
-## Modernisation & Technical Debt
+## Modernisation & Technical Debt (60)
 
 ### .NET Framework to Modern .NET
 
@@ -644,7 +640,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 59. How do you quantify the business risk of technical debt?
 60. Tell me about technical debt you personally reduced.
 
-## Microservices & Distributed Systems
+## Microservices & Distributed Systems (60)
 
 ### Microservices
 
@@ -721,7 +717,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 
 60. At Nagarro, what microservice responsibilities did you own for Betsson Group?
 
-## RabbitMQ & Messaging
+## RabbitMQ & Messaging (122)
 
 ### RabbitMQ and Messaging
 
@@ -868,7 +864,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 121. At Visa, what enterprise applications did you enhance using C#, .NET MVC, React, EF, LINQ, RabbitMQ, and microservices?
 122. How did RabbitMQ fit into your previous systems?
 
-## Azure
+## Azure (64)
 
 ### Azure PaaS
 
@@ -939,7 +935,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 63. How would you use Azure Front Door and CDN for global routing, TLS, caching, WAF protection, and regional failover?
 64. How do you manage secrets, certificates, and rotation using Azure Key Vault?
 
-## AWS
+## AWS (61)
 
 ### AWS Architecture and Serverless
 
@@ -1009,7 +1005,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 60. You need to release a breaking Lambda change without interrupting API clients. How would you use versions, aliases, weighted routing, API versioning, canary validation, and rollback?
 61. A customer asks what you personally implemented in AWS at Visa. How would you give a precise STAR answer that separates your contribution from the wider team’s work?
 
-## Cloud Architecture, Reliability & Cost
+## Cloud Architecture, Reliability & Cost (26)
 
 ### Cloud Security, Reliability, and Cost
 
@@ -1042,7 +1038,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 25. Security asks you to remove all stored cloud credentials from applications and pipelines. How would you migrate to workload identities and roles?
 26. You must move a customer-facing system from Azure to AWS, or AWS to Azure, with minimal downtime. What should remain portable and what should be redesigned?
 
-## React & TypeScript
+## React & TypeScript (129)
 
 ### React and Mobile/Web Experience
 
@@ -1202,7 +1198,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 
 129. A React page becomes slow after loading a large dataset. How do you improve it?
 
-## Angular & RxJS
+## Angular & RxJS (184)
 
 ### Angular and SPA Architecture
 
@@ -1411,8 +1407,15 @@ This file contains **all unique interview questions/prompts** extracted from the
 177. A backend API changes a DTO used by Angular screens. How do you protect the frontend?
 178. A role-based menu shows links the user cannot access. How do you fix it?
 179. How would you structure a large enterprise Angular app with features, shared UI, services, and routing?
+### Detailed Angular question pages
 
-## Frontend - General
+180. What Is Interpolation in Angular?
+181. What Is Event Binding in Angular?
+182. What Is Property Binding in Angular?
+183. AngularJS vs Modern Angular
+184. What Is Two-Way Binding in Angular?
+
+## Frontend - General (31)
 
 ### React, Angular, and Frontend
 
@@ -1452,7 +1455,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 30. How do you improve perceived performance for slow backend APIs?
 31. How do you debug memory leaks in a frontend application?
 
-## Security, Identity & Passkeys
+## Security, Identity & Passkeys (120)
 
 ### Security
 
@@ -1595,7 +1598,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 
 120. What security or reliability considerations matter most in payment applications?
 
-## Testing & Quality
+## Testing & Quality (6)
 
 ### Testing and Quality
 
@@ -1606,7 +1609,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 5. What tests would you write for a payment or transaction workflow?
 6. How do you handle flaky tests?
 
-## CI/CD & DevOps
+## CI/CD & DevOps (27)
 
 ### CI/CD and Engineering Standards
 
@@ -1638,7 +1641,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 26. SAST versus DAST?
 27. How do you scan dependencies for vulnerabilities?
 
-## Observability & Production Support
+## Observability & Production Support (8)
 
 ### Production, Observability, and Incidents
 
@@ -1651,7 +1654,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 7. How would you communicate during a production incident as a senior developer?
 8. How do you prevent a similar incident from happening again?
 
-## Live Coding & Practical Tasks
+## Live Coding & Practical Tasks (12)
 
 ### Live Coding / Practical Tasks
 
@@ -1668,7 +1671,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 11. Create a small React component that fetches API data and shows loading and error states.
 12. Debug a method that sometimes throws NullReferenceException.
 
-## Leadership, Behavioral & Consulting
+## Leadership, Behavioral & Consulting (78)
 
 ### Leadership and AI-Assisted Engineering
 
@@ -1759,7 +1762,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 77. How do you explain architecture trade-offs to non-technical stakeholders?
 78. What kind of senior developer do you want to be on a team?
 
-## HR & Company Fit
+## HR & Company Fit (16)
 
 ### Plexure Company Fit
 
@@ -1782,7 +1785,7 @@ This file contains **all unique interview questions/prompts** extracted from the
 15. Are you comfortable with hybrid work, production support, and Agile ceremonies?
 16. What are your strongest technical skills and which areas are you currently improving?
 
-## Cross-Technology Scenarios & CV Questions
+## Cross-Technology Scenarios & CV Questions (10)
 
 ### Answer Guides
 
